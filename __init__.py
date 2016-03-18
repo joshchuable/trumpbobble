@@ -5,8 +5,8 @@ import stripe
 import os
 
 stripe_keys = {
-    'secret_key': os.environ['SECRET_KEY'],
-    'publishable_key': os.environ['PUBLISHABLE_KEY']
+    'secret_key': "sk_test_LvcrElgTuPTXOYn06XtSshgN",
+    'publishable_key': "pk_test_gZGO4hFofN2dMsUz5cAexmAz"
 }
 
 stripe.api_key = stripe_keys['secret_key']
@@ -38,4 +38,4 @@ def charge():
         description='Flask Charge'
     )
 
-    return render_template('charge.html', amount=amount)
+    return render_template('thankyou.html', amount=amount)
