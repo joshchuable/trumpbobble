@@ -7284,18 +7284,6 @@ button.close {
 ============================================================= */
 /* GRID
 ============================================================= */
-body {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-}
-
 .flex-base {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -7355,7 +7343,7 @@ body {
 body {
   font-size: 12px;
   font-family: 'Lato', sans-serif;
-  color: #1b1b1b;
+  color: #f7f7f7;
   margin: 0;
 }
 
@@ -7404,28 +7392,107 @@ nav .trump-menu {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 1170px;
+  border-bottom: 4px solid #f7f7f7;
+  border-radius: 4px;
+  z-index: 3;
+}
+nav .trump-menu .logo {
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 6px;
+  color: #f7f7f7;
+  font-size: 48px;
+  margin-top: 10px;
 }
 nav .trump-menu .menu-right {
-  margin-left: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  text-align: right;
+  margin-right: 20px;
 }
 nav .trump-menu .menu-left {
-  margin-right: auto;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+}
+nav .trump-menu .menu-center {
+  text-align: center;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 
-.blue_button {
+.order-now {
   padding: 8px 12px;
   background-color: #0066cc;
-  border-bottom: 3px solid #00478f;
-  font-size: 14px;
+  border-bottom: 3px solid #004d99;
+  font-size: 20px;
   border-radius: 8px;
   text-decoration: none;
   color: #f7f7f7;
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
-.blue_button:hover {
+.order-now:hover {
   background-color: #0080ff;
-  border-bottom: 3px solid #004d99;
   cursor: pointer;
+}
+
+.contact-button {
+  font-size: 14px;
+  color: #f7f7f7;
+}
+.contact-button:hover {
+  color: #e3e3e3;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+#trump-background {
+  background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/trump-background.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 0px;
+  z-index: -5;
+  position: relative;
+}
+#trump-background:before {
+  content: "";
+  background: url(../img/crossed_stripes.png) repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: .6;
+  z-index: -4;
+}
+
+#top-container {
+  padding-top: 80px;
+  position: relative;
+  z-index: 2;
+}
+
+#bobble-hero {
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.product-headline {
+  font-size: 30px;
+  text-align: center;
+  color: #f7f7f7;
 }
 
 /* MISC

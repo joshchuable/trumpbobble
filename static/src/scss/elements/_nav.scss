@@ -13,14 +13,33 @@ nav {
 		list-style-type: none;
 		flex-direction: row;
 		justify-content: center;
+		align-items: center;
 		width: 1170px;
+		border-bottom: 4px solid $white;
+		border-radius: 4px;
+		z-index: 3;
+
+		.logo {
+			font-family: 'EB Garamond', serif;
+			letter-spacing: 6px;
+			color: $white;
+			font-size: 48px;
+			margin-top: 10px;
+		}
 
 		.menu-right {
-			margin-left: auto;
+			flex: 1;
+			text-align: right;
+			margin-right: 20px;
 		}
 
 		.menu-left {
-			margin-right: auto;
+			flex: 1;
+		}
+
+		.menu-center {
+			text-align: center;
+			flex: 2;
 		}
 	}
 }

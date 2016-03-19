@@ -24,7 +24,10 @@ if __name__ == "__main__":
 @app.route('/charge', methods=['POST'])
 def charge():
     # Amount in cents
-    amount = 500
+    if state == "MO":
+        amount = subtotal * 1.425
+    else:
+        amount = subtotal
 
     customer = stripe.Customer.create(
         email='customer@example.com',
