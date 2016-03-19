@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	return render_template("contents.html")
+	return render_template("contents.html", quantity_values=range(1,10), price=20)
 
 if __name__ == "__main__":
 	app.run(debug=True)

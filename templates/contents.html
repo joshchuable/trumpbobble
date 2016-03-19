@@ -6,8 +6,19 @@
 
 	<form action="/charge" method="post">
     <article>
+      <div class="button">
+    <button class="btn btn-default dropdown-toggle" type="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      Quantity
+      <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu" arialabelledby="dLabel">
+      {% for n in quantity_values%}
+      <li><a href="#">{{n}}</a></li>
+      {% endfor %}
+    </ul> 
+  </div>
       <label>
-        <span>Amount is $5.00</span>
+        <span>Subtotal: {{$5.00}}</span>
       </label>
     </article>
 
