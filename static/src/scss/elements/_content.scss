@@ -47,3 +47,49 @@ main {
 	text-align: center;
 	color: $white;
 }
+
+#order-now-form {
+	text-align: center;
+	margin-top: 20px;
+
+	.row {
+		width: 100%;
+		border: 1px solid $white;
+		margin: 0 auto;
+		border-radius: 4px;
+		padding: 0;
+		margin-bottom: 6px;
+	}
+
+	.form-label {
+		float: left;
+		font-size: 16px;
+		color: $white;
+		text-align: center;
+		height: 32px;
+		vertical-align: center;
+		margin-bottom: 0px;
+		padding-top: 4px;
+		border-right: 1px solid $white;
+	}
+
+	.form-input {
+		float: right;
+		font-size: 16px;
+		height: 32px;
+		color: $white;
+		background: transparent;
+		border: 0;
+
+		&:focus {
+			outline: none;
+		}
+
+		@include placeholder {
+			background: transparent;
+			vertical-align: center;
+			color: rgba($white,.75);
+		}
+	}
+}
+

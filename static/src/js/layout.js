@@ -6,5 +6,3 @@ $(document).ready(function() {
 		$('#trump-background').css('min-width', $(window).width()+'px');
 	});
 });
-
-// $('#main').css('background-size', $(window).width()+'px'+$(window).height()+'px');
