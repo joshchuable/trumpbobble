@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	$('#main').css('min-height', $(window).height()+'px');
-	$('#main').css('min-width', $(window).width()+'px');
+	$('#trump-background').css('min-height', $(window).height()+'px');
+	$('#trump-background').css('min-width', $(window).width()+'px');
 	$(window).resize(function() {
-		$('#main').css('min-height', $(window).height()+'px');
-		$('#main').css('min-width', $(window).width()+'px');
+		$('#trump-background').css('min-height', $(window).height()+'px');
+		$('#trump-background').css('min-width', $(window).width()+'px');
 	});
 });
 

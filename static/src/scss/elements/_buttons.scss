@@ -1,15 +1,26 @@
-.blue_button {
+.order-now {
 	padding: 8px 12px;
 	background-color: $blue;
-	border-bottom: 3px solid darken($blue-dark,2);
-	font-size: 14px;
+	border-bottom: 3px solid darken($blue,10);
+	font-size: 20px;
 	border-radius: 8px;
 	text-decoration: none;
 	color: $white;
+	width: 100%;
+	position: relative;
+	z-index: 1;
 
 	&:hover {
 		background-color: $blue-light;
-		border-bottom: 3px solid $blue-dark;
 		cursor: pointer;
+	}
+}
+
+.contact-button {
+	font-size: 14px;
+	color: $white;
+
+	&:hover {
+		color: darken($white,8);
 	}
 }
