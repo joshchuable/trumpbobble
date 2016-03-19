@@ -21,7 +21,6 @@ def index():
 
 @app.route("/confirmation/")
 def confirmation():
-    #if zip in 
     return render_template("confirmation.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
 
 @app.route('/charge', methods=['POST'])
