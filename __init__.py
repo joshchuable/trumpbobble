@@ -11,24 +11,22 @@ stripe_keys = {
 
 stripe.api_key = stripe_keys['secret_key']
 
+#mo_zip = 
+
 app = Flask(__name__)
 
 @app.route("/")
 def index():
 	return render_template("contents.html", quantity_values=range(1,10), price=20)
 
-if __name__ == "__main__":
-	app.run(debug=True)
-
+@app.route("/confirmation/")
+def confirmation():
+    #if zip in 
+    return render_template("confirmation.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
 
 @app.route('/charge', methods=['POST'])
 def charge():
     # Amount in cents
-    if state == "MO":
-        amount = subtotal * 1.425
-    else:
-        amount = subtotal
-
     customer = stripe.Customer.create(
         email='customer@example.com',
         card=request.form['stripeToken']
@@ -36,9 +34,11 @@ def charge():
 
     charge = stripe.Charge.create(
         customer=customer.id,
-        amount=amount,
         currency='usd',
-        description='Flask Charge'
     )
 
     return render_template('thankyou.html', amount=amount)
+
+if __name__ == "__main__":
+	app.run(debug=True)
+

@@ -10,31 +10,6 @@
           <h2 class="product-headline">Donald Trump Bobbleheads</h2>
           <p>A perfect symbol of your allegiances or gift for that special someone, our Trump bobbleheads offer a fun way to show your support for the Donald.</p>
           <p>Enjoy free shipping and a money-back guarantee for a limited time when you order now!</p>
-          <button class="order-now">Order Now!</button>
-            <form action="/charge" method="post">
-              <article>
-                <div class="button">
-                <button class="btn btn-default dropdown-toggle" type="button" id="dLabel" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                  <span class="caret"></span>
-                </button>
-                    <ul class="dropdown-menu" arialabelledby="dLabel">
-                      {% for n in quantity_values%}
-                      <li><a href="#">{{n}}</a></li>
-                      {% endfor %}
-                    </ul> 
-                </div>
-                <label>
-                  <span>Subtotal:</span>
-                </label>
-              </article>
-
-              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                      data-key="{{ key }}"
-                      data-description="A Flask Charge"
-                      data-amount="500"
-                      data-billing-address="True"
-                      data-locale="auto"></script>
-            </form>
         </div>
       </div>
     </div>
