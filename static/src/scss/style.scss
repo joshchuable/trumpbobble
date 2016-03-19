@@ -1,3 +1,7 @@
+/* BOOTSTRAP
+============================================================= */
+@import 'bootstrap/_bootstrap.scss';
+
 /* CUSTOM VARIABLES
 ============================================================= */
 @import 'custom_variables/_custom_variables.scss';
@@ -5,6 +9,10 @@
 /* RESPONSIVE
 ============================================================= */
 @import 'responsive/_responsive_breakpoints.scss';
+
+/* ANIMATIONS
+============================================================= */
+@import 'animations/_animations.scss';
 
 /* GRID
 ============================================================= */

@@ -1,10 +1,11 @@
-$screen-lg-min: 1200px;
+$screen-sm-min: 320px;
 $screen-md-min: 768px;
-$screen-sm-min: 480px;
-$screen-sm-max: "only screen and (max-width: 480px)";
-$screen-md-max: "only screen and (max-width: 768px)";
+$screen-lg-min: 1200px;
+$screen-sm-query: "screen and (min-width: #{$screen-sm-min}) and (max-width: #{$screen-md-min})";
+$screen-md-max: "screen and (max-width: 768px)";
 
-.container-small,
-.container-large {
-    max-width: 100%;
+@mixin screen-sm {
+	@media #{$screen-sm-query} {
+		@content;
+	}
 }

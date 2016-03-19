@@ -1,0 +1,794 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"learn",
+				"learn-more-form"
+			],
+			[
+				"text",
+				"textarea	Tag"
+			],
+			[
+				"border",
+				"border-right"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"screen",
+				"screen-md-min"
+			],
+			[
+				"build",
+				"build_css"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"col",
+				"col-md-12"
+			],
+			[
+				"font-",
+				"font-weight"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"blue",
+				"blue-primary"
+			],
+			[
+				"mysqli",
+				"mysqli_fetch"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "gulpfile.js",
+			"settings":
+			{
+				"buffer_size": 1526,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/nav.html",
+			"settings":
+			{
+				"buffer_size": 156,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/contents.html",
+			"settings":
+			{
+				"buffer_size": 61,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/custom_variables/_custom_variables.scss",
+			"settings":
+			{
+				"buffer_size": 222,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/responsive/_responsive_breakpoints.scss",
+			"settings":
+			{
+				"buffer_size": 283,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/elements/_content.scss",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "static/src/js/layout.js",
+			"settings":
+			{
+				"buffer_size": 379,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/elements/_nav.scss",
+			"settings":
+			{
+				"buffer_size": 370,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/grid/_grid.scss",
+			"settings":
+			{
+				"buffer_size": 503,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 163.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"sftp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"stfp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"sft",
+				"SFTP: Setup Server…"
+			],
+			[
+				"sfrp",
+				"SFTP: Setup Server…"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 496.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2deb499853c4371624f5a07e27c334aa' + 'bf8c4e67d14fb0525ba4f89698a6d7e1'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/grid",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates"
+	],
+	"file_history":
+	[
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/animations/_animations.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/style.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements/_nav.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/src/scss/style.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/base.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/src/css_debug/style.css",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/build/css/style.css",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/head.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/sftp-config.json",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/contents.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/nav.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/homelanding/homelanding.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/sftp-config.json",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/sftp-config.json",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/custom_variables/_custom_variables.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/elements/_buttons.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/grid/_grid.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/app.py",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/sftp",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/static/src/scss/basic_settings/_basic_settings.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/site_template/gulpfile.js",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/revopstools/Revopstools_UI/gulpfile.js",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/revopstools/Revopstools_UI/index.py",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/revopstools/Revopstools_UI/static/src/scss/scss.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/revopstools/Revopstools_UI/templates/index.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/@-5-Misc Sites/howtolearnchinese/@ Blog Posts/v2/Chinese Dictionaries - Reviewed.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/@-5-Misc Sites/howtolearnchinese/@ Blog Posts/Chinese Dictionaries - Reviewed.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Chinese Dictionaries - Reviewed.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/!-Build/CSS/style.css",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/other/_other.scss",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/pages/_homepage.scss",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/pages/_blog.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Textbook Reviews.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/PHP/functions.php",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/other/_breakpoints.scss",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/style.scss",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/PHP/sftp-config.json",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/PHP/AmazonPriceReturn.php",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/PHP/functions.php",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/index.php",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/.htaccess",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/other/_resources.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Beginner Study Methods.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Beginner Resources.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/About.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Templates.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/Home-Page.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Intermediate Study Methods.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/gulpfile.js",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/!-Sass/style.css",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/!-Build/CSS/sftp-config.json",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/other/_animations.scss",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/style.css",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Home-Page.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/other/_glyphicons.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/_Page Template.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/v2/Banned.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/wordpress/_wp-header.scss",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/style-backup.css",
+		"/C/Program Files (x86)/EasyPHP-Webserver-14.1b2/www/wordpress/wp-config.php",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/CSS/other/_other.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Disclaimer.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Chinese Dictionaries - Reviewed.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Textbook Reviews.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Intermediate Resources.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Beginner Resources.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Advanced Resources.html",
+		"/D/autorun.inf",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/CSS/sftp-config.json",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/Intermediate Study Methods.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/@ Blog Posts/_Page Template.html",
+		"/C/Users/RyeJ/Google Drive/! my documents/(@) z - misc sites/howtolearnchinese/! Code/Characters/Confucious.html",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/listing.tpl.php",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/frontend.css",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/listing.php",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/CSS/wordpress/wp-header.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/CSS/style.css",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/Home-Page.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Z - Misc Sites/howtolearnchinese/! Code/CSS/style.scss",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Travel Pals/(1) Custom Code/CSS/style.css",
+		"/C/Users/RyeJ/Desktop/Learn Coding/PHP/PHP project - diary.sublime-project",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Travel Pals/(1) Custom Code/CSS/style.scss",
+		"/C/Users/RyeJ/AppData/Roaming/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings",
+		"/C/Users/RyeJ/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/RyeJ/Desktop/Learn Coding/PHP/js/weatherscript.js",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Blog/Code Database/css/style.css",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Blog/Code Database/homepagev1.html",
+		"/C/Users/RyeJ/Google Drive/! My Documents/(@) Blog/Code Database/Contact v1.html",
+		"/C/Users/RyeJ/AppData/Roaming/Sublime Text 3/Packages/User/SFTP.errors.log",
+		"/C/Users/RyeJ/AppData/Local/Temp/fz3temp-1/style.css",
+		"/C/Users/RyeJ/Desktop/Learn Coding/PHP/sftp-config.json",
+		"/C/Users/RyeJ/Desktop/Learn Coding/Boostrap/dist/js/jscript.js",
+		"/C/Users/RyeJ/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			".home-wrapper",
+			"display-none",
+			"rgba($white,.85)",
+			"home-label",
+			"grid",
+			"2",
+			"email",
+			"$(window).width()+('px')",
+			"$(window).height()+'px'",
+			");",
+			"$blue-light",
+			"$blue",
+			"3px",
+			"WP_MEMORY_LIMIT",
+			"/var/www",
+			"40px",
+			"$endpoint",
+			"$request_url",
+			"$xml",
+			"10%",
+			"#357ebd",
+			"#428bca",
+			"region",
+			"US",
+			"$region",
+			"howtolearnc00-20",
+			"howtolearnc0e-20",
+			"small",
+			"style=\"display: inline;\"",
+			"small",
+			"margin",
+			"review",
+			"0",
+			"1",
+			"howtolearnc0e-20",
+			"wrapper",
+			"smallTopMargin",
+			"col-3 shift-1",
+			"col-offset-1",
+			"md-",
+			"entry",
+			"\n$",
+			")\";\n",
+			"$screen-sm-max: \"only screen and (max-width: 768px)\";",
+			"*/",
+			"greenHr",
+			"80",
+			"alignnone",
+			"body",
+			"lato",
+			"color"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"howtolearnc0a-20",
+			"howtolearnc00-20",
+			"blueHr",
+			"redHr",
+			"120"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "gulpfile.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1526,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								479,
+								479
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/nav.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 156,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								151,
+								151
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/contents.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 61,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								46,
+								46
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 3,
+					"file": "static/src/scss/custom_variables/_custom_variables.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "static/src/scss/responsive/_responsive_breakpoints.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 283,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "static/src/scss/elements/_content.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "static/src/js/layout.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 379,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								283,
+								283
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "static/src/scss/elements/_nav.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 370,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								155,
+								155
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "static/src/scss/grid/_grid.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 503,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								72,
+								72
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			0.5,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 130.0
+	},
+	"pinned_build_system": "",
+	"project": "trump_bobble.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\RyeJ\\Google Drive\\! My Documents\\(@) Z - Misc Sites\\AnswersSaaS\\AnswersSaaS.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 1,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 290.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
