@@ -1,17 +1,55 @@
 {% extends "base.html" %}
 {% block content %}
-  <div id="trump-background" class="jumbotron">
-    <div id="top-container" class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-1">
-          <p id="bobble-hero" class="text-center">This is where the hero shot picture will go.</p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="product-headline">Donald Trump Bobbleheads</h2>
-          <p>A perfect symbol of your allegiances or gift for that special someone, our Trump bobbleheads offer a fun way to show your support for the Donald.</p>
-          <p>Enjoy free shipping and a money-back guarantee for a limited time when you order now!</p>
-        </div>
-      </div>
-    </div>
-  </div>
+	<div id="trump-background" class="jumbotron">
+		<div id="top-container" class="container">
+			<div class="row">
+				<div class="col-md-4 col-md-offset-1">
+					<p id="bobble-hero" class="text-center">This is where the hero shot picture will go.</p>
+				</div>
+				<div class="col-md-6">
+					<h2 class="product-headline">Donald Trump Bobbleheads</h2>
+					<p>A perfect symbol of your allegiances or gift for that special someone, our Trump bobbleheads offer a fun way to show your support for the Donald.</p>
+					<p>Enjoy free shipping and a money-back guarantee for a limited time when you order now!</p>
+					<button class="order-now">Order Now!</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6 col-md-offset-5">
+					<form id="order-now-form">
+						<div class="row">
+							<label for="first-name" class="form-label col-md-3 col-sm-3">First Name</label>
+							<input id="first-name" type="text" class="form-input col-md-9 col-sm-9" placeholder="First Name">
+						</div>
+						<div class="row">
+							<label for="last-name" class="form-label col-md-3 col-sm-3">Last Name</label>
+							<input id="last-name" type="text" class="form-input col-md-9 col-sm-9" placeholder="Last Name">
+						</div>
+						<div class="row">
+							<label for="adress-1" class="form-label col-md-3 col-sm-3">Address</label>
+							<input id="adress-1" type="text" class="form-input col-md-9 col-sm-9" placeholder="Address">
+						</div>
+						<div class="row">
+							<label for="adress-2" class="form-label col-md-3 col-sm-3">Address Two</label>
+							<input id="adress-2" type="text" class="form-input col-md-9 col-sm-9" placeholder="Apartment, Unit">
+						</div>
+						<div class="row">
+							<label for="state" class="form-label col-md-3 col-sm-3">State</label>
+							<input id="state" type="text" class="form-input col-md-9 col-sm-9" placeholder="State">
+						</div>
+						<div class="row">
+							<label for="Zip" class="form-label col-md-3 col-sm-3">Zip</label>
+							<input id="Zip" type="text" class="form-input col-md-9 col-sm-9" placeholder="Zip Code">
+						</div>
+						<div class="row">
+							<label for="Phone" class="form-label col-md-3 col-sm-3">Phone</label>
+							<input id="Phone" type="text" class="form-input col-md-9 col-sm-9" placeholder="Phone">
+						</div>
+						<div class="row">
+							<button class="submit-button">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 {% endblock %}

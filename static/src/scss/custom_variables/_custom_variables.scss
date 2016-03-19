@@ -7,3 +7,10 @@ $gray-light: lighten($gray, 14);
 $blue: #0066cc;
 $blue-dark: darken($blue, 10);
 $blue-light: lighten($blue, 10);
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}
+}

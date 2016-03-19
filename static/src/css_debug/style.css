@@ -7349,9 +7349,9 @@ body {
 
 button {
   border: none;
-  -webkit-align-self: flex-start;
-  -ms-flex-item-align: start;
-  align-self: flex-start;
+}
+button:focus {
+  outline: none;
 }
 
 ul, menu, dir {
@@ -7444,11 +7444,26 @@ nav .trump-menu .menu-center {
 }
 
 .contact-button {
-  font-size: 14px;
+  font-size: 16px;
   color: #f7f7f7;
 }
 .contact-button:hover {
   color: #e3e3e3;
+}
+
+.submit-button {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  font-size: 16px;
+  height: 32px;
+}
+.submit-button:focus {
+  outline: none;
+}
+.submit-button:hover {
+  border: 1px solid white;
 }
 
 main {
@@ -7493,6 +7508,61 @@ main {
   font-size: 30px;
   text-align: center;
   color: #f7f7f7;
+}
+
+#order-now-form {
+  text-align: center;
+  margin-top: 20px;
+}
+#order-now-form .row {
+  width: 100%;
+  border: 1px solid #f7f7f7;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 0;
+  margin-bottom: 6px;
+}
+#order-now-form .form-label {
+  float: left;
+  font-size: 16px;
+  color: #f7f7f7;
+  text-align: center;
+  height: 32px;
+  vertical-align: center;
+  margin-bottom: 0px;
+  padding-top: 4px;
+  border-right: 1px solid #f7f7f7;
+}
+#order-now-form .form-input {
+  float: right;
+  font-size: 16px;
+  height: 32px;
+  color: #f7f7f7;
+  background: transparent;
+  border: 0;
+}
+#order-now-form .form-input:focus {
+  outline: none;
+}
+#order-now-form .form-input::-webkit-input-placeholder {
+  background: transparent;
+  vertical-align: center;
+  color: rgba(247, 247, 247, 0.75);
+}
+#order-now-form .form-input:-moz-placeholder {
+  background: transparent;
+  vertical-align: center;
+  color: rgba(247, 247, 247, 0.75);
+}
+#order-now-form .form-input::-moz-placeholder {
+  background: transparent;
+  vertical-align: center;
+  color: rgba(247, 247, 247, 0.75);
+}
+#order-now-form .form-input:-ms-input-placeholder {
+  background: transparent;
+  vertical-align: center;
+  color: rgba(247, 247, 247, 0.75);
 }
 
 /* MISC
