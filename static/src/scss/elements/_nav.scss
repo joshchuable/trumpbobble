@@ -1,64 +1,26 @@
 nav {
-	background-color: $side-menu;
-	border-right: 2px solid $white;
-	position: relative;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	background: transparent;
 	display: flex;
-	justify-content: flex-start;
-	flex-direction: column;
+	justify-content: center;
+	flex-direction: row;
 
-	ul {
-		list-style-type: none;
+	.trump-menu {
 		display: flex;
-		flex-direction: column;
+		list-style-type: none;
+		flex-direction: row;
 		justify-content: center;
-		align-items: stretch;
+		width: 1170px;
 
-		li {
-			flex: 1 0 60px;
-			padding: 4px;
-			margin-left: 20px;
+		.menu-right {
+			margin-left: auto;
 		}
 
-		.logo-li {
-			margin-top: 10px;
-			padding: 0px;
-			align-self: center;
-			margin-left: 0px;
-
-			.logo-text {
-				font-size: 20px;
-				font-weight: 700;
-				color: $white;
-				text-decoration: none;
-				border-bottom: 2px solid $white;
-
-				&:hover {
-					color: $blue-light;
-				}
-			}
-		}
-
-		.settings-menu {
-		}
-
-		a {
-			padding: 8px;
-			margin: 8px;
-			text-decoration: none;
-			color: $white;
-			font-size: 16px;
-
-			&:hover {
-				color: $blue-light;
-			}
-		}
-
-		.divider {
-			font-size: 20px;
-			color: $white;
-			align-self: center;
-			margin-left: 0px;
-			padding: 0px;
+		.menu-left {
+			margin-right: auto;
 		}
 	}
 }

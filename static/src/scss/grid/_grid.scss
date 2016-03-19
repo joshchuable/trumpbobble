@@ -4,20 +4,6 @@ body {
 	justify-content: center;
 }
 
-nav {
-	order: 1;
-	flex: 0 0 260px;
-}
-
-main {
-	order: 2;
-	flex: 1 1 auto;
-	display: flex;
-	flex-direction: column;
-	margin-left: 80px;
-	margin-right: 80px;
-}
-
 .flex-base {
 	display: flex;
 }

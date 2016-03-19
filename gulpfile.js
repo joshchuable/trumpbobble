@@ -2,9 +2,18 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	sass = require('gulp-ruby-sass'),
 	concat = require('gulp-concat'),
-	autoprefixer = require('gulp-autoprefixer');
+	autoprefixer = require('gulp-autoprefixer'),
+	imagemin = require('gulp-imagemin');
 
-gulp.task('default', ['scripts', 'styles', 'build_css', 'watch']);
+gulp.task('default', ['scripts', 'styles', 'build_css', 'img', 'watch']);
+
+// Watch Task
+// Watches JS
+gulp.task('watch', function(){
+	// Watch files location, then run the follow scripts
+	gulp.watch('static/src/js/*.js', ['scripts']);
+	gulp.watch('static/src/scss/**/*.scss', ['styles', 'build_css']);
+});
 
 // Scripts Task
 // Uglifies JS
@@ -17,12 +26,14 @@ gulp.task('scripts', function(){
 	.pipe(gulp.dest('static/build/js/'));
 });
 
-// Watch Task
-// Watches JS
-gulp.task('watch', function(){
-	// Watch files location, then run the follow scripts
-	gulp.watch('static/src/js/*.js', ['scripts']);
-	gulp.watch('static/src/scss/**/*.scss', ['styles', 'build_css']);
+// Img Task
+// Compresses Images
+gulp.task('img', function(){
+	gulp.src('static/src/img/*')
+	.pipe(imagemin({
+		progressive: true
+	}))
+	.pipe(gulp.dest('static/build/img/'));
 });
 
 // Styles Task
