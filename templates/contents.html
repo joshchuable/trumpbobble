@@ -18,7 +18,7 @@
     </ul> 
   </div>
       <label>
-        <span>Subtotal: {{$5.00}}</span>
+        <span>Subtotal:</span>
       </label>
     </article>
 
@@ -26,6 +26,7 @@
             data-key="{{ key }}"
             data-description="A Flask Charge"
             data-amount="500"
+            data-billing-address="True"
             data-locale="auto"></script>
   </form>
 {% endblock %}
