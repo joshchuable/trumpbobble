@@ -19,24 +19,30 @@ app = Flask(__name__)
 def index():
 	return render_template("contents.html", quantity_values=range(1,10), price=20)
 
-@app.route("/confirmation/")
-def confirmation():
-    return render_template("confirmation.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
+@app.route("/checkout/")
+def checkout():
+    return render_template("checkout.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
 
 @app.route('/charge', methods=['POST'])
 def charge():
     # Amount in cents
-    customer = stripe.Customer.create(
-        email='customer@example.com',
-        card=request.form['stripeToken']
-    )
 
-    charge = stripe.Charge.create(
-        customer=customer.id,
-        currency='usd',
-    )
+    country=request.form['stripeShipingCountry']
+    if country != "United States":
+        return render_template('sorry.html')
+    else:
 
-    return render_template('thankyou.html', amount=amount)
+        customer = stripe.Customer.create(
+            card=request.form['stripeToken']
+        )
+
+        charge = stripe.Charge.create(
+            customer=customer.id,
+            currency='usd',
+            amount=request.form['data-amount']
+        )
+
+        return render_template('thankyou.html', amount=amount)
 
 if __name__ == "__main__":
 	app.run(debug=True)
