@@ -7400,12 +7400,23 @@ nav .trump-menu {
   border-radius: 4px;
   z-index: 3;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav .trump-menu {
+    width: 100%;
+    border-radius: 0;
+  }
+}
 nav .trump-menu .logo {
   font-family: 'EB Garamond', serif;
   letter-spacing: 6px;
   color: #f7f7f7;
-  font-size: 48px;
+  font-size: 60px;
   margin-top: 10px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav .trump-menu .logo {
+    font-size: 32px;
+  }
 }
 nav .trump-menu .menu-right {
   -webkit-flex: 1;
@@ -7414,22 +7425,32 @@ nav .trump-menu .menu-right {
   text-align: right;
   margin-right: 20px;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav .trump-menu .menu-right {
+    display: none;
+  }
+}
 nav .trump-menu .menu-left {
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  nav .trump-menu .menu-left {
+    display: none;
+  }
+}
 nav .trump-menu .menu-center {
   text-align: center;
-  -webkit-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
+  -webkit-flex: 2 400px;
+  -ms-flex: 2 400px;
+  flex: 2 400px;
 }
 
 .order-now {
   padding: 8px 12px;
-  background-color: #0066cc;
-  border-bottom: 3px solid #004d99;
+  background-color: #0052A5;
+  border-bottom: 3px solid #003972;
   font-size: 20px;
   border-radius: 8px;
   text-decoration: none;
@@ -7439,7 +7460,7 @@ nav .trump-menu .menu-center {
   z-index: 1;
 }
 .order-now:hover {
-  background-color: #0080ff;
+  background-color: #006bd8;
   cursor: pointer;
 }
 
@@ -7449,6 +7470,11 @@ nav .trump-menu .menu-center {
 }
 .contact-button:hover {
   color: #e3e3e3;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contact-button {
+    font-size: 12px;
+  }
 }
 
 .submit-button {
@@ -7480,6 +7506,12 @@ main {
   padding: 0px;
   z-index: -5;
   position: relative;
+  margin: 0;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #trump-background {
+    background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/trump-background-mobile.jpg);
+  }
 }
 #trump-background:before {
   content: "";
@@ -7492,11 +7524,21 @@ main {
   opacity: .6;
   z-index: -4;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #trump-background p {
+    font-size: 16px;
+  }
+}
 
 #top-container {
   padding-top: 80px;
   position: relative;
   z-index: 2;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #top-container {
+    padding-top: 40px;
+  }
 }
 
 #bobble-hero {
@@ -7508,6 +7550,11 @@ main {
   font-size: 30px;
   text-align: center;
   color: #f7f7f7;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .product-headline {
+    font-size: 24px;
+  }
 }
 
 #order-now-form {

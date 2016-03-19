@@ -23,6 +23,10 @@
 	&:hover {
 		color: darken($white,8);
 	}
+
+	@include screen-sm {
+		font-size: 12px;
+	}
 }
 
 .submit-button {
