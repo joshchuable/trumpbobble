@@ -2,10 +2,7 @@
 	padding: 8px 12px;
 	background-color: $blue;
 	border-bottom: 3px solid darken($blue,10);
-	font-size: 20px;
 	border-radius: 8px;
-	text-decoration: none;
-	color: $white;
 	width: 100%;
 	position: relative;
 	z-index: 1;
@@ -13,6 +10,12 @@
 	&:hover {
 		background-color: $blue-light;
 		cursor: pointer;
+	}
+
+	a {
+		color: $white;
+		font-size: 20px;
+		text-decoration: none;
 	}
 }
 

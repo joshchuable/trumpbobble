@@ -1,0 +1,57 @@
+.checkout-title {
+	font-size: 32px;
+	color: $black;
+}
+
+.checkout-table {
+	border: 1px solid $white;
+	border-radius: 4px;
+	table-layout: fixed;
+
+	thead {
+		border-bottom: 1px solid $white;
+	}
+
+	th {
+		border-right: 1px solid $white;
+		padding-left: 2px;
+
+		&:last-child {
+			border-right: none;
+		}
+	}
+
+	tr {
+
+		td {
+			padding-left: 2px;
+			border-right: 1px solid rgba($gray,.25);
+			white-space: wrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+
+			&:last-child {
+				border-right: none;
+			}
+		}
+	}
+
+	.product-description {
+		width: 64%;
+		text-align: left;
+	}
+
+	.product-price,
+	.product-quantity {
+		width: 18%;
+		text-align: center;
+	}
+
+	.product-quantity {
+		color: $black;
+	}
+
+	.order-subtotal {
+		text-align: right;
+	}
+}
