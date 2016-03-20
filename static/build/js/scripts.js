@@ -21,9 +21,11 @@ function update_subtotal() {
 		subtotal += amount;
 	});
 
-	$('#order-subtotal').text(subtotal);
+	var subtotal_two = parseFloat(subtotal).toFixed(2);
+	$('#order-subtotal').text(subtotal_two);
 	var subtotal_fix = parseInt((parseFloat($('#order-subtotal').text()) * 100).toFixed(0));
 	$('#stripe-button').attr('data-amount',subtotal_fix);
+	$('#order-form-remix').attr('action','/charge/'+subtotal_fix);
 	console.log($('#stripe-button').attr('data-amount',subtotal_fix));
 }
 
@@ -69,8 +71,12 @@ $(document).ready(function() {
 $(document).ready(function() {
 	$('#trump-background').css('min-height', $(window).height()+'px');
 	$('#trump-background').css('min-width', $(window).width()+'px');
+
+	$('#top-container').css('padding-top',($('#nav').height()+10)+'px');
+
 	$(window).resize(function() {
-		$('#trump-background').css('min-height', $(window).height()+'px');
+		// $('#trump-background').css('min-height', $(window).height()+'px');
 		$('#trump-background').css('min-width', $(window).width()+'px');
+		$('#top-container').css('padding-top',($('#nav').height()+10)+'px');
 	});
 });

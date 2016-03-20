@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container" id="checkout-container">
+<div class="container" id="top-container">
     <div class="row">
         <div class="col-md-12">
             <h2 class="checkout-title">Checkout</h2>
@@ -11,7 +11,7 @@
             <img src="../static/build/img/product-box.png" alt="Donald Trump Bobblehead Picture" class="img-responsive product-hero">
         </div>
         <div class="col-md-6">
-            <form action="/charge" method="POST" id="order-form">
+            <form action="/charge/" method="POST" id="order-form-remix">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <table class="checkout-table" id="order-table">
@@ -30,30 +30,29 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td>Shipping</td>
-                                    <td>Free for US addresses!</td>
+                                    <td class="product-shipping">Shipping</td>
+                                    <td class="products-shipping-free">Free for US addresses!</td>
                                 </tr>
                                 <tr>
                                     <td class="order-subtotal">Subtotal: $<span id="order-subtotal"></span></td>
                                 </tr>
                             </tbody>
                         </table>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripe-button"
+                            data-key="{{ key }}"
+                            data-description="Trump Bobbleheads"
+                            data-amount="0"
+                            data-currency="USD"
+                            data-billing-address="True"
+                            data-shipping-address="True"
+                            data-locale="auto">
+                        </script>
                     </div>
-                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripe-button"
-                data-key="{{ key }}"
-                data-description="Trump Bobbleheads"
-                data-amount="0"
-                data-currency="USD"
-                data-billing-address="True"
-                data-shipping-address="True"
-                data-locale="auto">
-            </script>
                 </div>
             </form>
-        </div>
-    <div class="row">
-        <div class="col-md-12">
-            
         </div>
     </div>
 </div>

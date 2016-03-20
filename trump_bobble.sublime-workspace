@@ -4,16 +4,32 @@
 		"selected_items":
 		[
 			[
+				"subtotal",
+				"subtotal_fix"
+			],
+			[
+				"subtot",
+				"subtotal_fix"
+			],
+			[
+				"product",
+				"product-quantity-items"
+			],
+			[
+				"padding",
+				"padding-left"
+			],
+			[
+				"line",
+				"line-through"
+			],
+			[
 				"marg",
 				"margin-right"
 			],
 			[
 				"sr",
 				"screen-sm"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"learn",
@@ -84,18 +100,18 @@
 			}
 		},
 		{
-			"file": "templates/contents.html",
-			"settings":
-			{
-				"buffer_size": 2956,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "templates/footer.html",
 			"settings":
 			{
 				"buffer_size": 102,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/contents.html",
+			"settings":
+			{
+				"buffer_size": 820,
 				"line_ending": "Windows"
 			}
 		},
@@ -108,10 +124,18 @@
 			}
 		},
 		{
-			"file": "templates/confirmation.html",
+			"file": "templates/checkout-form.html",
 			"settings":
 			{
-				"buffer_size": 1131,
+				"buffer_size": 2885,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/checkout.html",
+			"settings":
+			{
+				"buffer_size": 1154,
 				"line_ending": "Unix"
 			}
 		},
@@ -135,7 +159,7 @@
 			"file": "static/src/scss/elements/_buttons.scss",
 			"settings":
 			{
-				"buffer_size": 673,
+				"buffer_size": 695,
 				"line_ending": "Windows"
 			}
 		},
@@ -156,10 +180,10 @@
 			}
 		},
 		{
-			"file": "__init__.py",
+			"file": "static/src/scss/elements/_checkout.scss",
 			"settings":
 			{
-				"buffer_size": 1012,
+				"buffer_size": 796,
 				"line_ending": "Windows"
 			}
 		},
@@ -167,7 +191,7 @@
 			"file": "static/src/scss/basic_settings/_basic_settings.scss",
 			"settings":
 			{
-				"buffer_size": 230,
+				"buffer_size": 282,
 				"line_ending": "Windows"
 			}
 		},
@@ -183,7 +207,15 @@
 			"file": "static/src/js/form.js",
 			"settings":
 			{
-				"buffer_size": 220,
+				"buffer_size": 2192,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "__init__.py",
+			"settings":
+			{
+				"buffer_size": 1556,
 				"line_ending": "Windows"
 			}
 		}
@@ -264,14 +296,17 @@
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/img",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates"
 	],
 	"file_history":
 	[
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/error.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/style.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/__init__.py",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/head.html",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/nav.html",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/grid/_grid.scss",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/style.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/animations/_animations.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements/_nav.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/src/scss/style.scss",
@@ -383,6 +418,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"$white",
+			"#stripe-script",
+			"Int",
 			"confirmation",
 			"Zip",
 			"State",
@@ -468,7 +506,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -500,42 +538,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/contents.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2956,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1143,
-								718
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 171.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "templates/footer.html",
 					"semi_transient": false,
 					"settings":
@@ -562,7 +569,39 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 15,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/contents.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 820,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								113,
+								113
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -578,8 +617,8 @@
 						"selection":
 						[
 							[
-								262,
-								262
+								191,
+								191
 							]
 						],
 						"settings":
@@ -594,24 +633,58 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 10,
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "templates/confirmation.html",
-					"semi_transient": true,
+					"file": "templates/checkout-form.html",
+					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1131,
+						"buffer_size": 2885,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								275,
-								275
+								93,
+								93
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Jinja2/Syntaxes/HTML (Jinja2).tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/checkout.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1154,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								458,
+								458
 							]
 						],
 						"settings":
@@ -624,7 +697,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 9,
@@ -633,11 +706,11 @@
 			]
 		},
 		{
-			"selected": 2,
+			"selected": 8,
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "static/src/scss/custom_variables/_custom_variables.scss",
 					"semi_transient": false,
 					"settings":
@@ -664,11 +737,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 6,
+					"buffer": 7,
 					"file": "static/src/scss/responsive/_responsive_breakpoints.scss",
 					"semi_transient": false,
 					"settings":
@@ -695,24 +768,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 13,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
+					"buffer": 8,
 					"file": "static/src/scss/elements/_buttons.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 673,
+						"buffer_size": 695,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								137,
-								137
+								695,
+								695
 							]
 						],
 						"settings":
@@ -724,14 +797,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 761.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "static/src/scss/elements/_nav.scss",
 					"semi_transient": false,
 					"settings":
@@ -759,11 +832,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "static/src/scss/elements/_content.scss",
 					"semi_transient": false,
 					"settings":
@@ -775,8 +848,8 @@
 						"selection":
 						[
 							[
-								1138,
-								1138
+								181,
+								181
 							]
 						],
 						"settings":
@@ -784,63 +857,63 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "static/src/scss/elements/_checkout.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 796,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								53,
+								53
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1919.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "__init__.py",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1012,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								901,
-								901
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "static/src/scss/basic_settings/_basic_settings.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 230,
+						"buffer_size": 282,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								86,
-								86
+								280,
+								280
 							]
 						],
 						"settings":
@@ -848,17 +921,18 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
-						"translation.x": -0.0,
-						"translation.y": 0.0,
+						"translation.x": 0.0,
+						"translation.y": 58.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 13,
 					"file": "static/src/js/layout.js",
 					"semi_transient": false,
 					"settings":
@@ -870,8 +944,8 @@
 						"selection":
 						[
 							[
-								340,
-								340
+								195,
+								195
 							]
 						],
 						"settings":
@@ -886,24 +960,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 8,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 14,
 					"file": "static/src/js/form.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 220,
+						"buffer_size": 2192,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								157,
-								157
+								270,
+								270
 							]
 						],
 						"settings":
@@ -918,7 +992,40 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "__init__.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1556,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 171.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1008,7 +1115,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},
