@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="container">
+<div class="container" id="checkout-container">
     <div class="row">
         <div class="col-md-12">
             <h2 class="checkout-title">Checkout</h2>
@@ -11,14 +11,17 @@
             <img src="../static/build/img/product-box.png" alt="Donald Trump Bobblehead Picture" class="img-responsive product-hero">
         </div>
         <div class="col-md-6">
-            <form action="/charge" method="post">
+            <form action="/charge" method="POST" id="order-form">
                 <div class="row">
                     <div class="col-md-12 col-sm-12">
                         <table class="checkout-table" id="order-table">
                             <tbody>
-                                <tr>
+                                <tr id="product-info">
                                     <td class="product-description">Pure Resin Donald Trump Bobblehead</td>
-                                    <td class="product-price"><span class="strikethrough">$25</span> <span class="price">$19.99</span> x </td>
+                                    <td class="product-price">
+                                        <span class="strikethrough">$25</span>
+                                        $<span id="price">19.99</span> x
+                                    </td>
                                     <td class="product-quantity">
                                         <div class="form-group">
                                             <select name="product-quantity-items" id="product-quantity-items" class="form-control">
@@ -31,28 +34,26 @@
                                     <td>Free for US addresses!</td>
                                 </tr>
                                 <tr>
-                                    <td>Shipping Zip Code</td>
-                                    <td><input type="text" class="zip-code-input" id="customer-zip" placeholder="Shipping Zip"></td>
-                                </tr>
-                                <tr>
                                     <td class="order-subtotal">Subtotal: $<span id="order-subtotal"></span></td>
                                 </tr>
                             </tbody>
                         </table>
-                        <button id="order-submit-button" class="submit-button">Submit</button>
                     </div>
+                    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripe-button"
+                data-key="{{ key }}"
+                data-description="Trump Bobbleheads"
+                data-amount="0"
+                data-currency="USD"
+                data-billing-address="True"
+                data-shipping-address="True"
+                data-locale="auto">
+            </script>
                 </div>
-
-                <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
-                    data-key="{{ key }}"
-                    data-description="Trump Bobbleheads"
-                    data-amount=""
-                    data-currency="USD"
-                    data-billing-address="True"
-                    data-shipping-address="True"
-                    data-locale="auto">
-                </script>
             </form>
+        </div>
+    <div class="row">
+        <div class="col-md-12">
+            
         </div>
     </div>
 </div>

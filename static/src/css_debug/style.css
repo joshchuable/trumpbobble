@@ -7490,6 +7490,7 @@ nav .trump-menu .menu-center {
   background: transparent;
   font-size: 16px;
   height: 32px;
+  margin-bottom: 80px;
 }
 .submit-button:focus {
   outline: none;
@@ -7627,21 +7628,25 @@ main {
   }
 }
 
+#checkout-container {
+  color: #1b1b1b;
+}
+
 .checkout-title {
   font-size: 32px;
   color: #1b1b1b;
 }
 
 .checkout-table {
-  border: 1px solid #f7f7f7;
+  border: 1px solid #1b1b1b;
   border-radius: 4px;
   table-layout: fixed;
 }
 .checkout-table thead {
-  border-bottom: 1px solid #f7f7f7;
+  border-bottom: 1px solid #1b1b1b;
 }
 .checkout-table th {
-  border-right: 1px solid #f7f7f7;
+  border-right: 1px solid #1b1b1b;
   padding-left: 2px;
 }
 .checkout-table th:last-child {
