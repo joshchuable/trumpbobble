@@ -21,7 +21,11 @@ def index():
 
 @app.route("/checkout/")
 def checkout():
-    return render_template("checkout.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
+    return render_template("checkout-form.html", key=stripe_keys['publishable_key'])
+
+#@app.route("/checkout/<total>")
+#def checkout(total):
+#    return render_template("checkout-form.html", total=total, key=stripe_keys['publishable_key'])
 
 @app.route('/charge/<amount>', methods=['POST'])
 def charge(amount):

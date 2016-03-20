@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+  <div id="trump-background" class="jumbotron">
+    <div id="top-container" class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-1">
+
+          <img src="../static/img/product.jpg">
+        </div>
+        <div class="col-md-6">
+          <h2>Confirm your order</h2>
+          <p>Quantity: {{quantity}}</p>
+            <form action="/charge" method="post">
+              <article>
+                <label>
+                  <p>Subtotal: ${{quantity * price}}</p>
+                  <p>Taxes: ${{}}</p>
+                </label>
+              </article>
+
+              <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                      data-key="{{ key }}"
+                      data-description="{{quantity}} Trump Bobbleheads"
+                      data-amount="{{quantity*price*100}}"
+                      data-currency="USD"
+                      data-billing-address="True"
+                      data-shipping-address="True"
+                      data-locale="auto"></script>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
