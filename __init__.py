@@ -23,26 +23,27 @@ def index():
 def checkout():
     return render_template("checkout.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
 
-@app.route('/charge', methods=['POST'])
-def charge():
+@app.route('/charge/<amount>', methods=['POST'])
+def charge(amount):
     # Amount in cents
-
-    country=request.form['stripeShipingCountry']
-    if country != "United States":
-        return render_template('sorry.html')
+    token = request.form['stripeToken']
+    country = request.form['stripeShippingAddressCountry']
+    customer = stripe.Customer.create(
+                source=token
+            )
+    if country not in ["US", "United States"]:
+        return render_template('error.html', error="We only take orders from the U.S. at this time. For international inquiries, please email us at contact@trumpbobble.com")
     else:
+        try:
+            charge = stripe.Charge.create(
+                customer=customer.id,
+                amount=amount,
+                currency='usd',
+            )  
 
-        customer = stripe.Customer.create(
-            card=request.form['stripeToken']
-        )
-
-        charge = stripe.Charge.create(
-            customer=customer.id,
-            currency='usd',
-            amount=request.form['data-amount']
-        )
-
-        return render_template('thankyou.html', amount=amount)
+            return render_template('thankyou.html',amount=(int(amount)/100))
+        except stripe.CardError:
+            return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
 
 if __name__ == "__main__":
 	app.run(debug=True)

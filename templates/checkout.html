@@ -10,7 +10,7 @@
         <div class="col-md-6">
           <h2>Confirm your order</h2>
           <p>Quantity: {{quantity}}</p>
-            <form action="/charge" method="post">
+            <form action="/charge/{{quantity*price*100}}" method="post">
               <article>
                 <label>
                   <p>Subtotal: ${{quantity * price}}</p>
