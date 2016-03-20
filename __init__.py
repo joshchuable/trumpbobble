@@ -11,7 +11,7 @@ stripe_keys = {
 
 stripe.api_key = stripe_keys['secret_key']
 
-#mo_zip = 
+#mo_zip =
 
 app = Flask(__name__)
 
@@ -21,7 +21,7 @@ def index():
 
 @app.route("/checkout/")
 def checkout():
-    return render_template("checkout.html", quantity=1, price=20, key=stripe_keys['publishable_key'])
+    return render_template("checkout-form.html", key=stripe_keys['publishable_key'], subtotal=0)
 
 @app.route('/charge/<amount>', methods=['POST'])
 def charge(amount):
@@ -39,7 +39,7 @@ def charge(amount):
                 customer=customer.id,
                 amount=amount,
                 currency='usd',
-            )  
+            )
 
             return render_template('thankyou.html',amount=(int(amount)/100))
         except stripe.CardError:
