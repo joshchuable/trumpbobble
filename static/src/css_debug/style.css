@@ -7363,6 +7363,10 @@ ul, menu, dir {
   text-align: center;
 }
 
+.strikethrough {
+  text-decoration: line-through;
+}
+
 /* ELEMENTS
 ============================================================= */
 nav {
@@ -7451,10 +7455,7 @@ nav .trump-menu .menu-center {
   padding: 8px 12px;
   background-color: #0052A5;
   border-bottom: 3px solid #003972;
-  font-size: 20px;
   border-radius: 8px;
-  text-decoration: none;
-  color: #f7f7f7;
   width: 100%;
   position: relative;
   z-index: 1;
@@ -7462,6 +7463,11 @@ nav .trump-menu .menu-center {
 .order-now:hover {
   background-color: #006bd8;
   cursor: pointer;
+}
+.order-now a {
+  color: #f7f7f7;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .contact-button {
@@ -7537,7 +7543,7 @@ main {
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   #top-container {
-    padding-top: 40px;
+    padding-top: 70px;
   }
 }
 
@@ -7610,6 +7616,61 @@ main {
   background: transparent;
   vertical-align: center;
   color: rgba(247, 247, 247, 0.75);
+}
+
+.product-hero {
+  margin: 0 auto;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .product-hero {
+    width: 120px;
+  }
+}
+
+.checkout-title {
+  font-size: 32px;
+  color: #1b1b1b;
+}
+
+.checkout-table {
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+  table-layout: fixed;
+}
+.checkout-table thead {
+  border-bottom: 1px solid #f7f7f7;
+}
+.checkout-table th {
+  border-right: 1px solid #f7f7f7;
+  padding-left: 2px;
+}
+.checkout-table th:last-child {
+  border-right: none;
+}
+.checkout-table tr td {
+  padding-left: 2px;
+  border-right: 1px solid rgba(224, 224, 224, 0.25);
+  white-space: wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.checkout-table tr td:last-child {
+  border-right: none;
+}
+.checkout-table .product-description {
+  width: 64%;
+  text-align: left;
+}
+.checkout-table .product-price,
+.checkout-table .product-quantity {
+  width: 18%;
+  text-align: center;
+}
+.checkout-table .product-quantity {
+  color: #1b1b1b;
+}
+.checkout-table .order-subtotal {
+  text-align: right;
 }
 
 /* MISC
