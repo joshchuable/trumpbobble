@@ -10,6 +10,28 @@
         <div class="col-md-6">
           <h2>Confirm your order</h2>
           <p>Quantity: {{quantity}}</p>
+          <table class="checkout-table" id="order-table">
+                            <tbody>
+                                <tr>
+                                    <td class="product-description">Pure Resin Donald Trump Bobblehead</td>
+                                    <td class="product-price"><span class="strikethrough">$25</span> <span class="price">$19.99</span> x </td>
+                                    <td class="product-quantity">
+                                        <div class="form-group">
+                                            <select name="product-quantity-items" id="product-quantity-items" class="form-control">
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Shipping</td>
+                                    <td>Free for US addresses!</td>
+                                </tr>
+                                <tr>
+                                    <td class="order-subtotal">Subtotal: $<span id="order-subtotal"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+            <button id="order-submit-button" class="submit-button">Submit</button>
             <form action="/charge/{{quantity*price*100}}" method="post">
               <article>
                 <label>
