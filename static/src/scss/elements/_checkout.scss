@@ -1,57 +1,129 @@
+#dark-background {
+	background-image:
+		linear-gradient(
+			rgba($black,.2),
+			rgba($black,.3)
+		);
+	z-index: -5;
+	position: relative;
+
+	&:before {
+		    content: "";
+		    background: url(../img/crossed_stripes.png) repeat;
+		    top: 0;
+		    left: 0;
+		    bottom: 0;
+		    right: 0;
+		    position: absolute;
+		    opacity: .6;
+		    z-index: -4;
+	}
+}
+
 .checkout-title {
 	font-size: 32px;
-	color: $black;
+	color: $white;
+	margin-bottom: 12px;
 }
 
 .checkout-table {
-	border: 1px solid $black;
+	border: 1px solid rgba($black,.66);
 	border-radius: 4px;
-	table-layout: fixed;
+	color: $black;
+	width: 100%;
+	font-size: 14px;
+	font-weight: bold;
+	background-color: rgba($gray,.7);
+	box-shadow: 0 0 3px rgba($white,.5);
 
-	thead {
+	@include screen-sm {
+		margin-top: 6px;
+	}
+
+	.order-header {
+		width: 100%;
+		color: $white;
+		text-align: center;
+		background-color: lighten($blue,5);
+		border-radius: 4px 4px 0px 0px;
+		font-size: 20px;
+		font-weight: bold;
 		border-bottom: 1px solid $black;
 	}
 
-	th {
-		border-right: 1px solid $black;
-		padding-left: 2px;
-
-		&:last-child {
-			border-right: none;
-		}
+	#product-info,
+	.product-shipping {
+		border-bottom: 1px solid rgba($black,.3);
+		width: 100%;
+		position: relative;
 	}
 
-	tr {
+	#product-info,
+	.product-shipping,
+	.order-subtotal {
+		padding: 6px;
+	}
 
-		td {
-			padding-left: 2px;
-			border-right: 1px solid rgba($gray,.25);
-			white-space: wrap;
-			overflow: hidden;
-			text-overflow: ellipsis;
+	#product-info {
 
-			&:last-child {
-				border-right: none;
+		white-space: nowrap;
+
+		.product-description {
+			width: 65%;
+			display: inline-block;
+			padding-left: 4px;
+			position: relative;
+			white-space: normal;
+		}
+
+		.product-other-wrapper {
+			width: 35%;
+			display: inline-block;
+			padding-right: 4px;
+			text-align: right;
+			position: relative;
+		}
+
+		.product-price {
+			display: inline-block;
+			text-align: right;
+		}
+
+		.product-quantity {
+			display: inline-block;
+			text-align: right;
+			margin-left: 2px;
+
+			#product-quantity-items {
+				border: 1px solid $gray;
+				border-radius: 4px;
 			}
 		}
 	}
 
-	.product-description {
-		width: 64%;
-		text-align: left;
+	.product-shipping {
+
+		.shipping {
+			padding-left: 4px;
+			width: 49%;
+			display: inline-block;
+		}
+
+		.shipping-free {
+			width: 50%;
+			display: inline-block;
+		}
 	}
 
-	.product-price,
-	.product-quantity {
-		width: 18%;
-		text-align: center;
-	}
-
-	.product-quantity {
-		color: $black;
-	}
-
+	.shipping-free,
 	.order-subtotal {
 		text-align: right;
+	}
+}
+
+#stripe-button-container {
+	margin-top: 6px;
+	button {
+		width: 100%;
 	}
 }

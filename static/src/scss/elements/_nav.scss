@@ -14,7 +14,7 @@ nav {
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
-		width: 1170px;
+		width: 80%;
 		border-bottom: 4px solid $white;
 		border-radius: 4px;
 		z-index: 3;
@@ -39,7 +39,6 @@ nav {
 		.menu-right {
 			flex: 1;
 			text-align: right;
-			margin-right: 20px;
 
 			@include screen-sm {
 				display: none;
