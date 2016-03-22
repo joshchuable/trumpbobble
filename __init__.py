@@ -34,7 +34,7 @@ def charge(amount):
                 source=token
             )
     if country not in ["US", "United States"] or state in ['Alaska','AK','Hawaii','HI']:
-        return render_template('error.html', error="We only take orders from the continental U.S. at this time. For international inquiries, please email us at contact@trumpbobble.com")
+        return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@trumpbobble.com")
     else:
         try:
             charge = stripe.Charge.create(
