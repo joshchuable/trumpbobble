@@ -1,12 +1,13 @@
 $(document).ready(function() {
 	var option = '';
-	for (var i=0;i<100;i++){
+	for (var i=1;i<100;i++){
 	   option += '<option value="'+ i + '">' + i + '</option>';
 	}
 	$('#product-quantity-items').append(option);
 });
 
 $(document).ready(function() {
+	update_subtotal();
 	$('#product-quantity-items').change(function() {
 		update_subtotal();
 	});
@@ -14,7 +15,7 @@ $(document).ready(function() {
 
 function update_subtotal() {
 	var subtotal = 0;
-	$('#order-table > tbody > #product-info').each(function() {
+	$('.checkout-table > #product-info').each(function() {
 		var quantity = parseFloat($(this).find('option:selected').val());
 		var price = parseFloat($(this).find('.product-price > #price').text());
 		var amount = (quantity * price);
@@ -69,14 +70,14 @@ $(document).ready(function() {
 //   });
 // </script>
 $(document).ready(function() {
-	$('#trump-background').css('min-height', $(window).height()+'px');
-	$('#trump-background').css('min-width', $(window).width()+'px');
+	$('.jumbotron').css('min-height', $(window).height()+'px');
+	$('.jumbotron').css('min-width', $(window).width()+'px');
 
 	$('#top-container').css('padding-top',($('#nav').height()+10)+'px');
 
 	$(window).resize(function() {
 		// $('#trump-background').css('min-height', $(window).height()+'px');
-		$('#trump-background').css('min-width', $(window).width()+'px');
+		$('.jumbotron').css('min-width', $(window).width()+'px');
 		$('#top-container').css('padding-top',($('#nav').height()+10)+'px');
 	});
 });

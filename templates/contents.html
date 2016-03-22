@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 	<div id="trump-background" class="jumbotron">
-		<div id="top-container" class="container">
+		<div id="top-container" class="container background-transparent">
 			<div class="row" id="top-row">
 				<div class="col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
 					<img src="../static/build/img/product-box.png" alt="Donald Trump Bobblehead Picture" class="img-responsive product-hero">
@@ -14,29 +14,35 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<div class="row" id="page-bottom">
-				<p class="learn-more">Learn More</p>
-				<div class="centered-div">
-					<div class="chevron-down"></div>
-				</div>
+		<div id="page-bottom">
+			<p class="learn-more">Learn More</p>
+			<div class="centered-div">
+				<div class="chevron-down"></div>
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="row">
+	<div class="container-fluid">
+		<div class="row selling-points">
+			<div class="col-md-4 col-sm-4">
+				<div class="sell-point-icon">
+					<span class="fi-like"></span>
+				</div>
+				<h3 class="sell-point-headline">Fun</h3>
+				<p class="sell-point-copy">Whether as a testament to your support or gift to a close one (even a grump liberal!), these bobbleheads are a hilarious tribute to the Donald!</p>
+			</div>
 			<div class="col-md-4 col-sm-4">
 				<div class="sell-point-icon">
 					<span class="fi-wrench"></span>
 				</div>
 				<h3 class="sell-point-headline">Quality</h3>
-				<p class="sell-point-copy">Our bobbleheads are made from high-quality, pure pine resin. Each one is built with care, joy, love--and an appropriate propensity to bobble!</p>
+				<p class="sell-point-copy">Our bobbleheads are made from high-quality, pure pine resin. Each one is built with care, joy, and love--all to ensure a healthy life full of bobbling!</p>
 			</div>
 			<div class="col-md-4 col-sm-4">
-
-			</div>
-			<div class="col-md-4 col-sm-4">
-
+				<div class="sell-point-icon">
+					<span class="fi-shield"></span>
+				</div>
+				<h3 class="sell-point-headline">Assurance</h3>
+				<p class="sell-point-copy">Each unit sold comes with a 30-day, no-hassle money back guarentee and free shipping in the continental US. We want you to enjoy your bobblehead worry free.</p>
 			</div>
 		</div>
 	</div>

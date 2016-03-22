@@ -3,6 +3,8 @@ body {
 	font-family: 'Lato', sans-serif;
 	color: $white;
 	margin: 0;
+	position: relative;
+	z-index: -100;
 }
 
 button {
@@ -24,4 +26,8 @@ ul, menu, dir {
 
 .strikethrough {
 	text-decoration: line-through;
+}
+
+.background-transparent {
+	background: transparent;
 }

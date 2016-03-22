@@ -7361,6 +7361,8 @@ body {
   font-family: 'Lato', sans-serif;
   color: #f7f7f7;
   margin: 0;
+  position: relative;
+  z-index: -100;
 }
 
 button {
@@ -7381,6 +7383,10 @@ ul, menu, dir {
 
 .strikethrough {
   text-decoration: line-through;
+}
+
+.background-transparent {
+  background: transparent;
 }
 
 /* ELEMENTS
@@ -7415,7 +7421,7 @@ nav .trump-menu {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 1170px;
+  width: 80%;
   border-bottom: 4px solid #f7f7f7;
   border-radius: 4px;
   z-index: 3;
@@ -7443,7 +7449,6 @@ nav .trump-menu .menu-right {
   -ms-flex: 1;
   flex: 1;
   text-align: right;
-  margin-right: 20px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   nav .trump-menu .menu-right {
@@ -7517,11 +7522,22 @@ nav .trump-menu .menu-center {
 
 main {
   position: relative;
-  z-index: 1;
+  z-index: -10;
+}
+main:before {
+  content: "";
+  background: url(../img/crossed_stripes.png) repeat;
+  position: absolute;
+  z-index: -10;
+  opacity: .8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
-.container {
-  background-image: #e0e0e0;
+.jumbotron {
+  padding: 0px;
 }
 
 #trump-background {
@@ -7562,7 +7578,6 @@ main {
   position: relative;
   z-index: 2;
   color: #f7f7f7;
-  background: transparent;
 }
 
 #bobble-hero {
@@ -7642,6 +7657,7 @@ main {
   padding: 2px 10px;
   border: 2px solid rgba(247, 247, 247, 0.4);
   border-radius: 4px;
+  width: 260px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .product-hero {
@@ -7700,15 +7716,17 @@ main {
 }
 
 .sell-point-icon {
-  color: #1b1b1b;
+  color: #f7f7f7;
   text-align: center;
   display: block;
   margin: 0 auto;
+  font-size: 24px;
 }
 .sell-point-icon span {
-  border: 2px solid #1b1b1b;
+  border: 2px solid #f7f7f7;
   border-radius: 50%;
-  padding: 10px;
+  padding: 16px 20px;
+  margin-bottom: 2px;
 }
 
 .sell-point-headline {
@@ -7720,51 +7738,133 @@ main {
 .sell-point-copy {
   font-size: 16px;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .sell-point-copy {
+    padding-bottom: 20px;
+  }
+}
+
+.selling-points {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .selling-points {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+#dark-background {
+  background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3));
+  z-index: -5;
+  position: relative;
+}
+#dark-background:before {
+  content: "";
+  background: url(../img/crossed_stripes.png) repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  opacity: .6;
+  z-index: -4;
+}
 
 .checkout-title {
   font-size: 32px;
-  color: #1b1b1b;
+  color: #f7f7f7;
+  margin-bottom: 12px;
 }
 
 .checkout-table {
-  border: 1px solid #1b1b1b;
+  border: 1px solid rgba(27, 27, 27, 0.66);
   border-radius: 4px;
-  table-layout: fixed;
+  color: #1b1b1b;
+  width: 100%;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: rgba(224, 224, 224, 0.7);
+  box-shadow: 0 0 3px rgba(247, 247, 247, 0.5);
 }
-.checkout-table thead {
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .checkout-table {
+    margin-top: 6px;
+  }
+}
+.checkout-table .order-header {
+  width: 100%;
+  color: #f7f7f7;
+  text-align: center;
+  background-color: #005fbf;
+  border-radius: 4px 4px 0px 0px;
+  font-size: 20px;
+  font-weight: bold;
   border-bottom: 1px solid #1b1b1b;
 }
-.checkout-table th {
-  border-right: 1px solid #1b1b1b;
-  padding-left: 2px;
+.checkout-table #product-info,
+.checkout-table .product-shipping {
+  border-bottom: 1px solid rgba(27, 27, 27, 0.3);
+  width: 100%;
+  position: relative;
 }
-.checkout-table th:last-child {
-  border-right: none;
+.checkout-table #product-info,
+.checkout-table .product-shipping,
+.checkout-table .order-subtotal {
+  padding: 6px;
 }
-.checkout-table tr td {
-  padding-left: 2px;
-  border-right: 1px solid rgba(224, 224, 224, 0.25);
-  white-space: wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.checkout-table #product-info {
+  white-space: nowrap;
 }
-.checkout-table tr td:last-child {
-  border-right: none;
+.checkout-table #product-info .product-description {
+  width: 65%;
+  display: inline-block;
+  padding-left: 4px;
+  position: relative;
+  white-space: normal;
 }
-.checkout-table .product-description {
-  width: 64%;
-  text-align: left;
+.checkout-table #product-info .product-other-wrapper {
+  width: 35%;
+  display: inline-block;
+  padding-right: 4px;
+  text-align: right;
+  position: relative;
 }
-.checkout-table .product-price,
-.checkout-table .product-quantity {
-  width: 18%;
-  text-align: center;
+.checkout-table #product-info .product-price {
+  display: inline-block;
+  text-align: right;
 }
-.checkout-table .product-quantity {
-  color: #1b1b1b;
+.checkout-table #product-info .product-quantity {
+  display: inline-block;
+  text-align: right;
+  margin-left: 2px;
 }
+.checkout-table #product-info .product-quantity #product-quantity-items {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+.checkout-table .product-shipping .shipping {
+  padding-left: 4px;
+  width: 49%;
+  display: inline-block;
+}
+.checkout-table .product-shipping .shipping-free {
+  width: 50%;
+  display: inline-block;
+}
+.checkout-table .shipping-free,
 .checkout-table .order-subtotal {
   text-align: right;
+}
+
+#stripe-button-container {
+  margin-top: 6px;
+}
+#stripe-button-container button {
+  width: 100%;
 }
 
 /* MISC
