@@ -70,9 +70,22 @@ main {
 	color: $white;
 }
 
-#bobble-hero {
-	margin-top: 20px;
-	padding: 10px;
+.bobble-hero {
+	margin-top: 10px;
+	padding: 6px 20px;
+	background: rgba($white,.8);
+	border: 1px solid rgba($white,.8);
+	border-radius: 4px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 300px;
+	box-shadow: 0px 0px 5px rgba($black,.8);
+
+	@include screen-sm {
+		height: 220px;
+		padding: 4px 10px;
+	}
 }
 
 .product-headline {
@@ -158,39 +171,36 @@ main {
 		font-size: 16px;
 		font-weight: bold;
 		text-align: center;
-		margin-bottom: 6px;
+		margin-bottom: -12px;
+	}
+
+	.fi-arrow-down {
+		font-size: 32px;
+
+		&:before {
+			@include animation('point-down 2.5s alternate infinite');
+			padding: 16px;
+		}
 	}
 }
 
-.centered-div {
-	margin: 0 auto;
+.learn-more-headline {
+	color: $white;
+	font-family: 'EB Garamond', serif;
+	letter-spacing: 4px;
 	text-align: center;
 }
 
-.chevron-down {
-	text-align: center;
-	position: relative;
-	width: 0;
+.learn-more-line {
+	width: 60%;
+	border-bottom: 2px solid $white;;
+	background: $white;
+	border-radius: 3px;
 	display: block;
 	margin: 0 auto;
-	height: 40px;
-	@include animation('point-down 2s alternate infinite');
 
-	&:before,
-	&:after {
-		position: absolute;
-		display: block;
-		content: "";
-		border: 20px solid transparent;
-		left: -20px;
-	}
-	&:before {
-		top: 1;
-		border-top-color: $white;
-	}
-	&:after {
-		top: -10px;
-		border-top-color: lighten($black,12);
+	@include screen-sm {
+		width: 80%;
 	}
 }
 
@@ -213,6 +223,10 @@ main {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+
+	@include screen-sm {
+		font-size: 16px;
+	}
 }
 
 .sell-point-copy {
@@ -220,12 +234,12 @@ main {
 
 	@include screen-sm {
 		padding-bottom: 20px;
+		text-align: center;
 	}
 }
 
 .selling-points {
 	padding-top: 40px;
-	padding-bottom: 40px;
 	margin-left: 10%;
 	margin-right: 10%;
 

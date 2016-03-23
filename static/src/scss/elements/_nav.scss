@@ -26,13 +26,18 @@ nav {
 
 		.logo {
 			font-family: 'EB Garamond', serif;
-			letter-spacing: 6px;
+			letter-spacing: 8px;
 			color: $white;
-			font-size: 60px;
+			font-size: 42px;
 			margin-top: 10px;
 
 			@include screen-sm {
-				font-size: 32px;
+				font-size: 30px;
+			}
+
+			a {
+				text-decoration: none;
+				color: $white;
 			}
 		}
 
