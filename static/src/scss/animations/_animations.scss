@@ -25,6 +25,6 @@
 }
 
 @include keyframe(point-down) {
-    from { margin-bottom: 0px; }
-    to { margin-bottom: -8px; }
+    from { padding-bottom: 0px; }
+    to { padding-bottom: -8px; }
 }

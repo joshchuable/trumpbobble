@@ -81,3 +81,12 @@ $(document).ready(function() {
 		$('#top-container').css('padding-top',($('#nav').height()+10)+'px');
 	});
 });
+
+$(document).ready(function (){
+    $("#page-bottom").click(function (){
+        $('html, body').animate({
+            scrollTop: $('#scroll-end').offset().top
+        }, 2000);
+        $(this).hide();
+    });
+});

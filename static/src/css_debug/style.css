@@ -7284,18 +7284,18 @@ button.close {
 ============================================================= */
 @-webkit-keyframes point-down {
   from {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   to {
-    margin-bottom: -8px;
+    padding-bottom: -8px;
   }
 }
 @keyframes point-down {
   from {
-    margin-bottom: 0px;
+    padding-bottom: 0px;
   }
   to {
-    margin-bottom: -8px;
+    padding-bottom: -8px;
   }
 }
 /* GRID
@@ -7434,16 +7434,19 @@ nav .trump-menu {
 }
 nav .trump-menu .logo {
   font-family: 'EB Garamond', serif;
-  letter-spacing: 6px;
+  letter-spacing: 8px;
   color: #f7f7f7;
-  font-size: 60px;
+  font-size: 42px;
   margin-top: 10px;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   nav .trump-menu .logo {
-    font-size: 32px;
-    color:#f7f7f7;
+    font-size: 30px;
   }
+}
+nav .trump-menu .logo a {
+  text-decoration: none;
+  color: #f7f7f7;
 }
 nav .trump-menu .menu-right {
   -webkit-flex: 1;
@@ -7495,6 +7498,10 @@ nav .trump-menu .menu-center .a{
   color: #f7f7f7;
   font-size: 20px;
   text-decoration: none;
+}
+
+.order-now-bottom {
+  margin-bottom: 40px;
 }
 
 .contact-button {
@@ -7586,9 +7593,23 @@ main:before {
   color: #f7f7f7;
 }
 
-#bobble-hero {
-  margin-top: 20px;
-  padding: 10px;
+.bobble-hero {
+  margin-top: 10px;
+  padding: 6px 20px;
+  background: rgba(247, 247, 247, 0.8);
+  border: 1px solid rgba(247, 247, 247, 0.8);
+  border-radius: 4px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+  box-shadow: 0px 0px 5px rgba(27, 27, 27, 0.8);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .bobble-hero {
+    height: 220px;
+    padding: 4px 10px;
+  }
 }
 
 .product-headline {
@@ -7687,38 +7708,36 @@ main:before {
   font-size: 16px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 6px;
+  margin-bottom: -12px;
+}
+#page-bottom .fi-arrow-down {
+  font-size: 32px;
+}
+#page-bottom .fi-arrow-down:before {
+  -webkit-animation: point-down 2.5s alternate infinite;
+  animation: point-down 2.5s alternate infinite;
+  padding: 16px;
 }
 
-.centered-div {
-  margin: 0 auto;
+.learn-more-headline {
+  color: #f7f7f7;
+  font-family: 'EB Garamond', serif;
+  letter-spacing: 4px;
   text-align: center;
 }
 
-.chevron-down {
-  text-align: center;
-  position: relative;
-  width: 0;
+.learn-more-line {
+  width: 60%;
+  border-bottom: 2px solid #f7f7f7;
+  background: #f7f7f7;
+  border-radius: 3px;
   display: block;
   margin: 0 auto;
-  height: 40px;
-  -webkit-animation: point-down 2s alternate infinite;
-  animation: point-down 2s alternate infinite;
 }
-.chevron-down:before, .chevron-down:after {
-  position: absolute;
-  display: block;
-  content: "";
-  border: 20px solid transparent;
-  left: -20px;
-}
-.chevron-down:before {
-  top: 1;
-  border-top-color: #f7f7f7;
-}
-.chevron-down:after {
-  top: -10px;
-  border-top-color: #3a3a3a;
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .learn-more-line {
+    width: 80%;
+  }
 }
 
 .sell-point-icon {
@@ -7740,6 +7759,11 @@ main:before {
   font-weight: bold;
   text-align: center;
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .sell-point-headline {
+    font-size: 16px;
+  }
+}
 
 .sell-point-copy {
   font-size: 16px;
@@ -7747,12 +7771,12 @@ main:before {
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .sell-point-copy {
     padding-bottom: 20px;
+    text-align: center;
   }
 }
 
 .selling-points {
   padding-top: 40px;
-  padding-bottom: 40px;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -7778,6 +7802,10 @@ main:before {
   position: absolute;
   opacity: .6;
   z-index: -4;
+}
+
+#order-form-remix {
+  margin-top: 20px;
 }
 
 .checkout-title {
