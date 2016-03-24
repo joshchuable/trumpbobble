@@ -7936,6 +7936,9 @@ main:before {
 .footer-list a:hover {
   color: #f2f2f2;
 }
+.footer-list li {
+  padding: 2px 0px;
+}
 .footer-list .footer-header {
   font-size: 20px;
   padding-bottom: 10px;
