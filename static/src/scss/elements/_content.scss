@@ -143,6 +143,20 @@ main {
 	}
 }
 
+.trump-vid {
+	padding-top: 30px;
+	width: 560px;
+	height: 300px;
+	display: block;
+	margin: 0 auto;
+	box-shadow: 0px 0px 4px rgba($black,.8);
+
+	@include screen-sm {
+		width: 100%;
+		height: auto;
+	}
+}
+
 .product-hero {
 	margin: 0 auto;
 	background-color: rgba($white,.4);

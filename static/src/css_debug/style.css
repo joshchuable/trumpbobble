@@ -7496,6 +7496,7 @@ nav .trump-menu .menu-center {
 }
 
 .order-now-bottom {
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -7671,6 +7672,21 @@ main:before {
   background: transparent;
   vertical-align: center;
   color: rgba(247, 247, 247, 0.75);
+}
+
+.trump-vid {
+  padding-top: 30px;
+  width: 560px;
+  height: 300px;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0px 0px 4px rgba(27, 27, 27, 0.8);
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .trump-vid {
+    width: 100%;
+    height: auto;
+  }
 }
 
 .product-hero {
@@ -7894,6 +7910,34 @@ main:before {
 }
 #stripe-button-container button {
   width: 100%;
+}
+
+.footer-wrapper {
+  background: #1b1b1b;
+  color: #f7f7f7;
+}
+
+.footer-list {
+  text-align: center;
+  list-style-type: none;
+  padding: 60px 0px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .footer-list {
+    padding: 40px 0px;
+  }
+}
+.footer-list a {
+  text-decoration: none;
+  color: #d8d8d8;
+  font-size: 16px;
+}
+.footer-list a:hover {
+  color: #f2f2f2;
+}
+.footer-list .footer-header {
+  font-size: 20px;
+  padding-bottom: 10px;
 }
 
 /* MISC

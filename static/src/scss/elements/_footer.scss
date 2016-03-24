@@ -1,0 +1,29 @@
+.footer-wrapper {
+	background: $black;
+	color: $white;
+}
+
+.footer-list {
+	text-align: center;
+	list-style-type: none;
+	padding: 60px 0px;
+
+	@include screen-sm {
+		padding: 40px 0px;
+	}
+
+	a {
+		text-decoration: none;
+		color: darken($white,12);
+		font-size: 16px;
+
+		&:hover {
+			color: darken($white,2);
+		}
+	}
+
+	.footer-header {
+		font-size: 20px;
+		padding-bottom: 10px;
+	}
+}
