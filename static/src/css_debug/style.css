@@ -7803,6 +7803,7 @@ main:before {
   background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3));
   z-index: -5;
   position: relative;
+  margin-bottom: 0px;
 }
 #dark-background:before {
   content: "";
