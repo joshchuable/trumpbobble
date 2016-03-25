@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	return render_template("contents.html", quantity_values=range(1,10), price=20)
+	return render_template("contents.html")
 
 @app.route("/checkout/")
 def checkout():
@@ -47,6 +47,12 @@ def charge(amount):
         except stripe.CardError:
             return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
 
+@app.route("/terms")
+def terms():
+    return render_template("terms.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)
+
+
 
