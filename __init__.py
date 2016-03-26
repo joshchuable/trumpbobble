@@ -17,7 +17,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-	return render_template("contents.html", quantity_values=range(1,10), price=20)
+	return render_template("contents.html")
 
 @app.route("/checkout/")
 def checkout():
@@ -34,7 +34,7 @@ def charge(amount):
                 source=token
             )
     if country not in ["US", "United States"] or state in ['Alaska','AK','Hawaii','HI']:
-        return render_template('error.html', error="We only take orders from the continental U.S. at this time. For international inquiries, please email us at contact@trumpbobble.com")
+        return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@trumpbobble.com")
     else:
         try:
             charge = stripe.Charge.create(
@@ -47,6 +47,12 @@ def charge(amount):
         except stripe.CardError:
             return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
 
+@app.route("/terms")
+def terms():
+    return render_template("terms.html")
+
 if __name__ == "__main__":
 	app.run(debug=True)
+
+
 

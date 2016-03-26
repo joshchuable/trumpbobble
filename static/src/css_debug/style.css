@@ -197,6 +197,11 @@ nav .trump-menu .menu-center {
   -webkit-flex: 2 400px;
   -ms-flex: 2 400px;
   flex: 2 400px;
+  text-decoration: none !important;
+}
+
+nav .trump-menu .menu-center .a{
+  text-decoration: none !important;
 }
 
 .order-now {
