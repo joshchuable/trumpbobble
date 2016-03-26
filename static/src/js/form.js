@@ -27,7 +27,6 @@ function update_subtotal() {
 	var subtotal_fix = parseInt((parseFloat($('#order-subtotal').text()) * 100).toFixed(0));
 	$('#stripe-button').attr('data-amount',subtotal_fix);
 	$('#order-form-remix').attr('action','/charge/'+subtotal_fix);
-	console.log($('#stripe-button').attr('data-amount',subtotal_fix));
 }
 
 // $(document).ready(function() {

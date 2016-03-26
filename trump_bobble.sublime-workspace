@@ -4,16 +4,56 @@
 		"selected_items":
 		[
 			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"ic",
+				"include"
+			],
+			[
+				"margin-",
+				"margin-right"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"white",
+				"white-space"
+			],
+			[
+				"order-",
+				"order-subtotal"
+			],
+			[
+				"product",
+				"product-shipping"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
 				"subtotal",
 				"subtotal_fix"
 			],
 			[
 				"subtot",
 				"subtotal_fix"
-			],
-			[
-				"product",
-				"product-quantity-items"
 			],
 			[
 				"padding",
@@ -34,10 +74,6 @@
 			[
 				"learn",
 				"learn-more-form"
-			],
-			[
-				"text",
-				"textarea	Tag"
 			],
 			[
 				"border",
@@ -100,22 +136,6 @@
 			}
 		},
 		{
-			"file": "templates/footer.html",
-			"settings":
-			{
-				"buffer_size": 102,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "templates/contents.html",
-			"settings":
-			{
-				"buffer_size": 820,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "templates/base.html",
 			"settings":
 			{
@@ -124,19 +144,35 @@
 			}
 		},
 		{
-			"file": "templates/checkout-form.html",
+			"file": "templates/footer.html",
 			"settings":
 			{
-				"buffer_size": 2885,
+				"buffer_size": 475,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "templates/checkout.html",
+			"file": "templates/contents.html",
 			"settings":
 			{
-				"buffer_size": 1154,
-				"line_ending": "Unix"
+				"buffer_size": 3696,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/checkout-form.html",
+			"settings":
+			{
+				"buffer_size": 2778,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "templates/nav.html",
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -144,6 +180,14 @@
 			"settings":
 			{
 				"buffer_size": 414,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/basic_settings/_basic_settings.scss",
+			"settings":
+			{
+				"buffer_size": 374,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +203,7 @@
 			"file": "static/src/scss/elements/_buttons.scss",
 			"settings":
 			{
-				"buffer_size": 695,
+				"buffer_size": 759,
 				"line_ending": "Windows"
 			}
 		},
@@ -167,7 +211,7 @@
 			"file": "static/src/scss/elements/_nav.scss",
 			"settings":
 			{
-				"buffer_size": 901,
+				"buffer_size": 934,
 				"line_ending": "Windows"
 			}
 		},
@@ -175,7 +219,7 @@
 			"file": "static/src/scss/elements/_content.scss",
 			"settings":
 			{
-				"buffer_size": 1853,
+				"buffer_size": 3965,
 				"line_ending": "Unix"
 			}
 		},
@@ -183,15 +227,23 @@
 			"file": "static/src/scss/elements/_checkout.scss",
 			"settings":
 			{
-				"buffer_size": 796,
+				"buffer_size": 3043,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "static/src/scss/basic_settings/_basic_settings.scss",
+			"file": "static/src/scss/elements/_footer.scss",
 			"settings":
 			{
-				"buffer_size": 282,
+				"buffer_size": 407,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/src/scss/animations/_animations.scss",
+			"settings":
+			{
+				"buffer_size": 556,
 				"line_ending": "Windows"
 			}
 		},
@@ -199,7 +251,7 @@
 			"file": "static/src/js/layout.js",
 			"settings":
 			{
-				"buffer_size": 340,
+				"buffer_size": 679,
 				"line_ending": "Windows"
 			}
 		},
@@ -207,15 +259,7 @@
 			"file": "static/src/js/form.js",
 			"settings":
 			{
-				"buffer_size": 2192,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "__init__.py",
-			"settings":
-			{
-				"buffer_size": 1556,
+				"buffer_size": 2207,
 				"line_ending": "Windows"
 			}
 		}
@@ -294,21 +338,23 @@
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/build",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/build/img",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/img",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/animations",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates"
 	],
 	"file_history":
 	[
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/error.html",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/style.scss",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/__init__.py",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/head.html",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/nav.html",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/grid/_grid.scss",
-		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/animations/_animations.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/elements/_nav.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/style.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/nav.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/animations/_animations.scss",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/head.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/css_debug/style.css",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/__init__.py",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/checkout.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/templates/error.html",
+		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/trump_bobble/static/src/scss/grid/_grid.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/src/scss/style.scss",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/templates/base.html",
 		"/C/Users/RyeJ/Google-Drive/1-My-Documents/1-GitHub/travelpals/static/src/css_debug/style.css",
@@ -404,7 +450,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 36.0
 	},
 	"find_in_files":
 	{
@@ -418,6 +464,28 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"10px",
+			"8",
+			"{\n",
+			"order-now",
+			"order",
+			"width",
+			"$gray",
+			"margin",
+			"black",
+			"#trump-background",
+			"19",
+			"20",
+			"keyframe",
+			"6",
+			"14px",
+			"background-position: -500px;",
+			"background-position:    0px;",
+			"play",
+			"keyf",
+			"bottom",
+			"gray",
+			"3",
 			"$white",
 			"#stripe-script",
 			"Int",
@@ -506,7 +574,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -538,74 +606,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 12,
+					"stack_index": 16,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "templates/footer.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 102,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								102,
-								102
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "templates/contents.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 820,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								113,
-								113
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "templates/base.html",
 					"semi_transient": false,
 					"settings":
@@ -633,7 +638,70 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/footer.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 475,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								319,
+								319
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/contents.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3187,
+								3187
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -642,15 +710,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2885,
+						"buffer_size": 2778,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								453,
+								453
 							]
 						],
 						"settings":
@@ -667,24 +735,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "templates/checkout.html",
+					"file": "templates/nav.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1154,
+						"buffer_size": 215,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								458,
-								458
+								123,
+								123
 							]
 						],
 						"settings":
@@ -692,21 +760,19 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 114.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 8,
 					"type": "text"
 				}
 			]
 		},
 		{
-			"selected": 8,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -722,8 +788,8 @@
 						"selection":
 						[
 							[
-								244,
-								244
+								12,
+								17
 							]
 						],
 						"settings":
@@ -737,11 +803,43 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 14,
+					"stack_index": 15,
 					"type": "text"
 				},
 				{
 					"buffer": 7,
+					"file": "static/src/scss/basic_settings/_basic_settings.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 374,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								123,
+								123
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
 					"file": "static/src/scss/responsive/_responsive_breakpoints.scss",
 					"semi_transient": false,
 					"settings":
@@ -768,24 +866,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 14,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 9,
 					"file": "static/src/scss/elements/_buttons.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 695,
+						"buffer_size": 759,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								695,
-								695
+								350,
+								350
 							]
 						],
 						"settings":
@@ -796,28 +894,28 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 761.0,
+						"translation.x": -0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 9,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
+					"buffer": 10,
 					"file": "static/src/scss/elements/_nav.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 901,
+						"buffer_size": 934,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								132,
-								132
+								5,
+								5
 							]
 						],
 						"settings":
@@ -832,24 +930,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
+					"buffer": 11,
 					"file": "static/src/scss/elements/_content.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1853,
+						"buffer_size": 3965,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								181,
-								181
+								263,
+								263
 							]
 						],
 						"settings":
@@ -868,20 +966,53 @@
 					"type": "text"
 				},
 				{
-					"buffer": 11,
+					"buffer": 12,
 					"file": "static/src/scss/elements/_checkout.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 796,
+						"buffer_size": 3043,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								53,
-								53
+								2304,
+								2304
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2501.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "static/src/scss/elements/_footer.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 407,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								181,
+								181
 							]
 						],
 						"settings":
@@ -893,27 +1024,31 @@
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 114.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
-					"file": "static/src/scss/basic_settings/_basic_settings.scss",
+					"buffer": 14,
+					"file": "static/src/scss/animations/_animations.scss",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 282,
+						"buffer_size": 556,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								280,
-								280
+								506,
+								506
+							],
+							[
+								538,
+								538
 							]
 						],
 						"settings":
@@ -922,110 +1057,79 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
-						"translation.x": 0.0,
-						"translation.y": 58.0,
+						"translation.x": -0.0,
+						"translation.y": 285.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "static/src/js/layout.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 340,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								195,
-								195
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "static/src/js/form.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2192,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								270,
-								270
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"open_with_edit": true,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 12,
 					"type": "text"
 				},
 				{
 					"buffer": 15,
-					"file": "__init__.py",
+					"file": "static/src/js/layout.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1556,
+						"buffer_size": 679,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								259,
-								259
+								667,
+								667
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
+							"open_with_edit": true,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/Python/Python.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 171.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 11,
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "static/src/js/form.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2207,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
 					"type": "text"
 				}
 			]
