@@ -503,7 +503,7 @@ main:before {
 }
 
 .learn-more-headline {
-  color: #1b1b1b;
+  color: #6a7e85;
   font-family: 'EB Garamond', serif;
   letter-spacing: 4px;
   text-align: center;
@@ -511,8 +511,8 @@ main:before {
 
 .learn-more-line {
   width: 60%;
-  border-bottom: 2px solid #1b1b1b;
-  background: #1b1b1b;
+  border-bottom: 2px solid #6a7e85;
+  background: #6a7e85;
   border-radius: 3px;
   display: block;
   margin: 0 auto;
@@ -575,8 +575,8 @@ main:before {
   display: block;
   width: 80%;
   margin: 20px auto;
-  border-top: 2px solid rgba(27, 27, 27, 0.6);
-  border-bottom: 2px solid rgba(27, 27, 27, 0.6);
+  border-top: 2px solid rgba(106, 126, 133, 0.6);
+  border-bottom: 2px solid rgba(106, 126, 133, 0.6);
   padding-top: 30px;
   padding-bottom: 30px;
   text-align: center;
@@ -604,7 +604,7 @@ main:before {
   position: absolute;
   left: -20px;
   top: -40px;
-  color: #1b1b1b;
+  color: #6a7e85;
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .quote-section .quote:before {
@@ -622,7 +622,7 @@ main:before {
   white-space: normal;
 }
 .quote-attribution .quote-dash {
-  color: rgba(27, 27, 27, 0.8);
+  color: rgba(106, 126, 133, 0.8);
 }
 .quote-attribution .review-headshot {
   border-radius: 50%;
@@ -673,7 +673,7 @@ main:before {
   width: 100%;
   font-size: 14px;
   font-weight: bold;
-  background-color: rgba(224, 224, 224, 0.7);
+  background-color: rgba(106, 126, 133, 0.7);
   box-shadow: 0 0 3px rgba(247, 247, 247, 0.5);
 }
 @media screen and (min-width: 320px) and (max-width: 768px) {
@@ -729,7 +729,7 @@ main:before {
   margin-left: 2px;
 }
 .checkout-table #product-info .product-quantity #product-quantity-items {
-  border: 1px solid #e0e0e0;
+  border: 1px solid #6a7e85;
   border-radius: 4px;
 }
 .checkout-table .product-shipping .shipping {

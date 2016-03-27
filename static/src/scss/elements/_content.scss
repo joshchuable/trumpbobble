@@ -233,7 +233,7 @@ main {
 }
 
 .learn-more-headline {
-	color: $black;
+	color: $gray;
 	font-family: 'EB Garamond', serif;
 	letter-spacing: 4px;
 	text-align: center;
@@ -241,8 +241,8 @@ main {
 
 .learn-more-line {
 	width: 60%;
-	border-bottom: 2px solid $black;;
-	background: $black;
+	border-bottom: 2px solid $gray;
+	background: $gray;
 	border-radius: 3px;
 	display: block;
 	margin: 0 auto;
@@ -302,8 +302,8 @@ main {
 	display: block;
 	width: 80%;
 	margin: 20px auto;
-	border-top: 2px solid rgba($black,.6);
-	border-bottom: 2px solid rgba($black,.6);
+	border-top: 2px solid rgba($gray,.6);
+	border-bottom: 2px solid rgba($gray,.6);
 	padding-top: 30px;
 	padding-bottom: 30px;
 	text-align: center;
@@ -330,7 +330,7 @@ main {
 		    position: absolute;
 		    left: -20px;
 		    top: -40px;
-		    color: $black;
+		    color: $gray;
 
 		    @include screen-sm {
 		    	font-size: 52px;
@@ -349,7 +349,7 @@ main {
 	white-space: normal;
 
 	.quote-dash {
-		color: rgba($black,.8);
+		color: rgba($gray,.8);
 	}
 
 	.review-headshot {
