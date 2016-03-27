@@ -3,9 +3,16 @@
 	background-color: $blue;
 	border-bottom: 3px solid darken($blue,10);
 	border-radius: 8px;
-	width: 100%;
+	width: 300px;
 	position: relative;
 	z-index: 1;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	@include screen-sm {
+		width: 100%;
+	}
 
 	&:hover {
 		background-color: $blue-light;
@@ -30,6 +37,7 @@
 
 	&:hover {
 		color: darken($white,8);
+		text-decoration: none;
 	}
 
 	@include screen-sm {

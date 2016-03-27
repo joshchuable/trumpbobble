@@ -4,7 +4,7 @@ main {
 
 	&:before {
 		content: "";
-		background: url(../img/crossed_stripes.png) repeat;
+		background: url(../img/grid_noise.png) repeat;
 		position: absolute;
 		z-index: -10;
 		opacity: .8;
@@ -95,6 +95,39 @@ main {
 
 	@include screen-sm {
 		font-size: 24px;
+	}
+}
+
+.product-subhead {
+	text-align: center;
+}
+
+.checkout-list {
+	column-count: 2;
+	column-gap: 20px;
+	font-size: 20px;
+	list-style-type: none;
+	text-align: left;
+	margin-left: 30px;
+	margin-bottom: 12px;
+
+	@include screen-sm {
+		font-size: 16px;
+		column-gap: 10px;
+		margin-left: 0px;
+	}
+
+	li {
+		color: $white;
+		padding-bottom: 10px;
+
+		@include screen-sm {
+			padding-top: 4px;
+		}
+
+		.fi-check {
+			padding-right: 6px;
+		}
 	}
 }
 
@@ -200,7 +233,7 @@ main {
 }
 
 .learn-more-headline {
-	color: $white;
+	color: $black;
 	font-family: 'EB Garamond', serif;
 	letter-spacing: 4px;
 	text-align: center;
@@ -208,8 +241,8 @@ main {
 
 .learn-more-line {
 	width: 60%;
-	border-bottom: 2px solid $white;;
-	background: $white;
+	border-bottom: 2px solid $black;;
+	background: $black;
 	border-radius: 3px;
 	display: block;
 	margin: 0 auto;
@@ -220,14 +253,14 @@ main {
 }
 
 .sell-point-icon {
-	color: $white;
+	color: rgba($blue,.8);
 	text-align: center;
 	display: block;
 	margin: 0 auto;
 	font-size: 24px;
 
 	span {
-		border: 2px solid $white;
+		border: 2px solid rgba($blue,.8);
 		border-radius: 50%;
 		padding: 16px 20px;
 		margin-bottom: 2px;
@@ -238,6 +271,7 @@ main {
 	font-size: 24px;
 	font-weight: bold;
 	text-align: center;
+	color: rgba($blue,.8);
 
 	@include screen-sm {
 		font-size: 16px;
@@ -261,5 +295,73 @@ main {
 	@include screen-sm {
 		margin-left: 2%;
 		margin-right: 2%;
+	}
+}
+
+.quote-section {
+	display: block;
+	width: 80%;
+	margin: 20px auto;
+	border-top: 2px solid rgba($black,.6);
+	border-bottom: 2px solid rgba($black,.6);
+	padding-top: 30px;
+	padding-bottom: 30px;
+	text-align: center;
+	font-size: 20px;
+	white-space: nowrap;
+
+	@include screen-sm {
+		display: none;
+	}
+
+	.quote {
+		font-size: 18px;
+		position: relative;
+		display: inline-block;
+		white-space: normal;
+		width: 78%;
+		margin-left: 10px;
+
+		&:before {
+		    display: block;
+		    padding-left: 10px;
+		    content: "\201C";
+		    font-size: 80px;
+		    position: absolute;
+		    left: -20px;
+		    top: -40px;
+		    color: $black;
+
+		    @include screen-sm {
+		    	font-size: 52px;
+		    	width: 100%;
+		    }
+		}
+	}
+}
+
+.quote-attribution {
+	text-align: center;
+	padding-right: 20px;
+	font-size: 14px;
+	vertical-align: middle;
+	display: inline-block;
+	white-space: normal;
+
+	.quote-dash {
+		color: rgba($black,.8);
+	}
+
+	.review-headshot {
+		border-radius: 50%;
+		border: 2px solid rgba($white,.8);
+		width: 82px;
+		margin-right: 100px;
+		margin-top: 12px;
+		margin-left: 6px;
+
+		@include screen-sm {
+			width: 60px;
+		}
 	}
 }

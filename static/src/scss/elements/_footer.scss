@@ -1,6 +1,7 @@
 .footer-wrapper {
 	background: $black;
 	color: $white;
+	position: relative;
 }
 
 .footer-list {
@@ -29,5 +30,17 @@
 	.footer-header {
 		font-size: 20px;
 		padding-bottom: 10px;
+	}
+}
+
+.copyright {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	color: $white;
+	font-size: 10px;
+
+	@include screen-sm {
+		font-size: 8px;
 	}
 }
