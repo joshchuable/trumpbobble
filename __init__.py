@@ -1,6 +1,5 @@
-from flask import Flask, request, render_template, make_response, url_for, redirect
+from flask import Flask, request, render_template, make_response
 from io import StringIO
-from config import config, interface
 import datetime
 import stripe
 import os
@@ -24,7 +23,7 @@ def index():
 def checkout():
     return render_template("checkout-form.html", key=stripe_keys['publishable_key'])
 
-@app.route('/charge/<amount>', methods=['POST'])
+@app.route('/charge/stripe/<amount>', methods=['POST'])
 def charge(amount):
     # Amount in cents
     token = request.form['stripeToken']
@@ -47,13 +46,6 @@ def charge(amount):
             return render_template('thankyou.html',amount=dollar_amount)
         except stripe.CardError:
             return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
-@app.route("/")
-def index():
-    return """
-        <a href="%s">
-            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_xpressCheckout.gif">
-        </a>
-        """ % url_for('paypal_redirect')   
 
 @app.route("/paypal/redirect")
 def paypal_redirect():
@@ -121,7 +113,6 @@ def paypal_status(token):
 @app.route("/paypal/cancel")
 def paypal_cancel():
     return redirect(url_for('index'))
-
 
 @app.route("/terms")
 def terms():

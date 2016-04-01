@@ -32,7 +32,7 @@
                             </tbody>
                         </table>
             <button id="order-submit-button" class="submit-button">Submit</button>
-            <form action="/charge/{{quantity*price*100}}" method="post">
+            <form action="/charge/stripe/{{quantity*price*100}}" method="post">
               <article>
                 <label>
                   <p>Subtotal: ${{quantity * price}}</p>
