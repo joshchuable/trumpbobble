@@ -1,8 +1,17 @@
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request, render_template, make_response, url_for, redirect
 from io import StringIO
 import datetime
 import stripe
 import os
+from paypal import PayPalConfig
+from paypal import PayPalInterface
+
+config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
+                      API_PASSWORD = "VHD5LBSTVY5F2LVY",
+                      API_SIGNATURE = "AFcWxV21C7fd0v3bYYYRCpSSRl31A31AGwDGKoQXB-ZlN1VRvKP2zDyu",
+                      DEBUG_LEVEL=1)
+
+interface = PayPalInterface(config=config)
 
 stripe_keys = {
     'secret_key': "sk_test_BnQz5NQauCGFT5lWsQROeTX6",
@@ -45,12 +54,13 @@ def charge(amount):
 
             return render_template('thankyou.html',amount=dollar_amount)
         except stripe.CardError:
-            return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
+            return render_template('error.html', error="Your card swas declined. Please try again or call your credit card company.")
 
-@app.route("/paypal/redirect")
-def paypal_redirect():
+@app.route("/paypal/redirect/<amount>")
+def paypal_redirect(amount):
+    dollar_amount = str(int(amount)/100)
     kw = {
-        'amt': '10.00',
+        'amt': dollar_amount,
         'currencycode': 'USD',
         'returnurl': url_for('paypal_confirm', _external=True),
         'cancelurl': url_for('paypal_cancel', _external=True),
