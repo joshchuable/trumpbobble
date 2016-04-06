@@ -261,6 +261,28 @@ nav .trump-menu .menu-center {
   border: 1px solid white;
 }
 
+#submit {
+  width: 94%;
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  background: transparent;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  border: 1px solid #f7f7f7;
+  border-radius: 4px;
+}
+#submit:focus {
+  outline: none;
+}
+#submit:hover {
+  border: 1px solid white;
+  color: #73B9FF;
+}
+
 main {
   position: relative;
   z-index: -10;
@@ -664,6 +686,7 @@ main:before {
   font-size: 32px;
   color: #f7f7f7;
   margin-bottom: 12px;
+  margin-top: 0px;
 }
 
 .checkout-table {
@@ -748,6 +771,7 @@ main:before {
 
 #stripe-button-container {
   margin-top: 6px;
+  margin-bottom: 10px;
 }
 #stripe-button-container button {
   width: 100%;
@@ -796,6 +820,72 @@ main:before {
   .copyright {
     font-size: 8px;
   }
+}
+
+.contact-form {
+  padding: 20px 12px;
+  background-color: rgba(27, 27, 27, 0.5);
+  box-shadow: 0px 0px 3px rgba(27, 27, 27, 0.3);
+  color: #f7f7f7;
+  font-size: 14px;
+  border-radius: 4px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .contact-form {
+    font-size: 16px;
+  }
+}
+.contact-form input,
+.contact-form textarea {
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid rgba(247, 247, 247, 0.8);
+  background-color: rgba(247, 247, 247, 0.4);
+  display: block;
+  width: 94%;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 2px;
+  box-shadow: 0px 0px 3px rgba(27, 27, 27, 0.7);
+}
+
+#name::-webkit-input-placeholder,
+#email::-webkit-input-placeholder,
+#subject::-webkit-input-placeholder,
+#message::-webkit-input-placeholder {
+  color: #f7f7f7;
+}
+#name:-moz-placeholder,
+#email:-moz-placeholder,
+#subject:-moz-placeholder,
+#message:-moz-placeholder {
+  color: #f7f7f7;
+}
+#name::-moz-placeholder,
+#email::-moz-placeholder,
+#subject::-moz-placeholder,
+#message::-moz-placeholder {
+  color: #f7f7f7;
+}
+#name:-ms-input-placeholder,
+#email:-ms-input-placeholder,
+#subject:-ms-input-placeholder,
+#message:-ms-input-placeholder {
+  color: #f7f7f7;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #name,
+  #email,
+  #subject,
+  #message {
+    font-size: 16px;
+  }
+}
+
+#message {
+  height: 100px;
 }
 
 /* MISC
