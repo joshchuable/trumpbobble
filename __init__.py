@@ -5,7 +5,11 @@ import stripe
 import os
 from paypal import PayPalConfig
 from paypal import PayPalInterface
+import sys
+from flask_mail import Mail, Message
+from pscripts.send_email import ContactForm
 
+#Paypal configs
 config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
                       API_PASSWORD = "VHD5LBSTVY5F2LVY",
                       API_SIGNATURE = "AFcWxV21C7fd0v3bYYYRCpSSRl31A31AGwDGKoQXB-ZlN1VRvKP2zDyu",
@@ -13,6 +17,8 @@ config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
 
 interface = PayPalInterface(config=config)
 
+
+ #Stripe Configs
 stripe_keys = {
     'secret_key': "sk_test_BnQz5NQauCGFT5lWsQROeTX6",
     'publishable_key': "pk_test_U2NHMtMm8NmjPT9m8ZWyjf8t"
@@ -20,9 +26,16 @@ stripe_keys = {
 
 stripe.api_key = stripe_keys['secret_key']
 
-#mo_zip =
-
 app = Flask(__name__)
+app.secret_key = 'the_R4nD0M_Things___4keys--true'
+# Email Configs
+app.config['MAIL_SERVER'] = 'smtp.zoho.com'
+app.config['MAIL_PORT'] = 465
+app.config['MAIL_USE_SSL'] = True
+app.config['MAIL_USERNAME'] = 'admin@trumpbobble.com'
+app.config['MAIL_PASSWORD'] = 'taoist-terrier-sleeve-tingly-debate'
+# Mailer
+mail = Mail(app)
 
 @app.route("/")
 def index():
@@ -32,7 +45,26 @@ def index():
 def checkout():
     return render_template("checkout-form.html", key=stripe_keys['publishable_key'])
 
-@app.route('/charge/stripe/<amount>', methods=['POST'])
+@app.route("/contact/", methods=['POST','GET'])
+def contact():
+  form = ContactForm()
+  if request.method == 'POST':
+    if form.validate() == False:
+        return 'Please fill out all sections of the form and resubmit.'
+    else:
+        msg = Message(form.subject.data, sender='admin@trumpbobble.com', recipients=['admin@trumpbobble.com','rye@trumpbobble.com'])
+        msg.body = """
+        From: %s <%s>
+        %s
+        """ % (form.name.data, form.email.data, form.message.data)
+        mail.send(msg)
+
+        return 'Message sent! Hit back to return to the site.'
+
+  elif request.method == 'GET':
+    return render_template('contact.html', form=form)
+
+@app.route("/charge/stripe/<amount>", methods=['POST'])
 def charge(amount):
     # Amount in cents
     token = request.form['stripeToken']
@@ -124,12 +156,9 @@ def paypal_status(token):
 def paypal_cancel():
     return redirect(url_for('index'))
 
-@app.route("/terms")
+@app.route("/terms/")
 def terms():
     return render_template("terms.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
-
-
-
