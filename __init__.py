@@ -83,13 +83,13 @@ def charge(amount):
                 currency='usd',
             )
 
-            return render_template('thankyou.html',amount=dollar_amount)
+            return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@trumpbobble.com and we'll let you know when we have more in store!")
         except stripe.CardError:
             return render_template('error.html', error="Your card swas declined. Please try again or call your credit card company.")
 
 @app.route("/paypal/redirect/<amount>")
 def paypal_redirect(amount):
-    return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@trumpbobble.com")
+    return render_template('error.html',error="Whoops, we're all out of stock. Send us a message at info@trumpbobble.com and we'll let you know when we have more in store!")
     #dollar_amount = str(int(amount)/100)
     #kw = {
         #'amt': dollar_amount,
@@ -101,7 +101,7 @@ def paypal_redirect(amount):
 
     #setexp_response = interface.set_express_checkout(**kw)
     #return redirect(interface.generate_express_checkout_redirect_url(setexp_response.token))     
-    
+
 @app.route("/paypal/confirm")
 def paypal_confirm():
     getexp_response = interface.get_express_checkout_details(token=request.args.get('token', ''))
