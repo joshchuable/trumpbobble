@@ -1,11 +1,11 @@
 import sys
+import os
 from flask import Flask, request, render_template, make_response
 from io import StringIO
 from pscripts.send_email import ContactForm
 from flask_mail import Mail, Message
 import datetime
 import stripe
-import os
 
 stripe_keys = {
     'secret_key': "sk_test_BnQz5NQauCGFT5lWsQROeTX6",
@@ -31,11 +31,11 @@ mail = Mail(app)
 def index():
 	return render_template('contents.html')
 
-@app.route('/checkout/')
+@app.route('/checkout')
 def checkout():
     return render_template('checkout-form.html', key=stripe_keys['publishable_key'])
 
-@app.route('/contact/', methods=['POST','GET'])
+@app.route('/contact', methods=['POST','GET'])
 def contact():
   form = ContactForm()
 
@@ -52,7 +52,7 @@ def contact():
 
         return 'Message sent! Hit back to return to the site.'
 
-  elif request.method == 'GET':
+  else:
     return render_template('contact.html', form=form)
 
 @app.route('/charge/<amount>', methods=['POST'])
