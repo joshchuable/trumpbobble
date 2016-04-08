@@ -1,11 +1,11 @@
+import sys
+import os
 from flask import Flask, request, render_template, make_response, url_for, redirect
 from io import StringIO
 import datetime
 import stripe
-import os
 from paypal import PayPalConfig
 from paypal import PayPalInterface
-import sys
 from flask_mail import Mail, Message
 from pscripts.send_email import ContactForm
 
@@ -16,7 +16,6 @@ config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
                       DEBUG_LEVEL=1)
 
 interface = PayPalInterface(config=config)
-
 
  #Stripe Configs
 stripe_keys = {
@@ -41,11 +40,11 @@ mail = Mail(app)
 def index():
 	return render_template("contents.html")
 
-@app.route("/checkout/")
+@app.route('/checkout')
 def checkout():
     return render_template("checkout-form.html", key=stripe_keys['publishable_key'])
 
-@app.route("/contact/", methods=['POST','GET'])
+@app.route('/contact', methods=['POST','GET'])
 def contact():
   form = ContactForm()
   if request.method == 'POST':
@@ -61,7 +60,7 @@ def contact():
 
         return 'Message sent! Hit back to return to the site.'
 
-  elif request.method == 'GET':
+  else:
     return render_template('contact.html', form=form)
 
 @app.route("/charge/stripe/<amount>", methods=['POST'])
@@ -102,7 +101,7 @@ def paypal_redirect(amount):
 
     #setexp_response = interface.set_express_checkout(**kw)
     #return redirect(interface.generate_express_checkout_redirect_url(setexp_response.token))     
-
+    
 @app.route("/paypal/confirm")
 def paypal_confirm():
     getexp_response = interface.get_express_checkout_details(token=request.args.get('token', ''))
@@ -132,7 +131,7 @@ def paypal_do(token):
         'token': token,
         'currencycode': getexp_response['CURRENCYCODE']
     }
-    interface.do_express_checkout_payment(**kw)   
+    interface.do_express_checkout_payment(**kw)
 
     return redirect(url_for('paypal_status', token=kw['token']))
 
