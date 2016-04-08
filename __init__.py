@@ -90,17 +90,18 @@ def charge(amount):
 
 @app.route("/paypal/redirect/<amount>")
 def paypal_redirect(amount):
-    dollar_amount = str(int(amount)/100)
-    kw = {
-        'amt': dollar_amount,
-        'currencycode': 'USD',
-        'returnurl': url_for('paypal_confirm', _external=True),
-        'cancelurl': url_for('paypal_cancel', _external=True),
-        'paymentaction': 'Sale'
-    }
+    return render_template('error.html', error="Sorry, we only take orders from the continental U.S. at this time. Your card will not be charged. For international inquiries, please email us at contact@trumpbobble.com")
+    #dollar_amount = str(int(amount)/100)
+    #kw = {
+        #'amt': dollar_amount,
+        #currencycode': 'USD',
+        #returnurl': url_for('paypal_confirm', _external=True),
+        #'cancelurl': url_for('paypal_cancel', _external=True),
+        #'paymentaction': 'Sale'
+    #}
 
-    setexp_response = interface.set_express_checkout(**kw)
-    return redirect(interface.generate_express_checkout_redirect_url(setexp_response.token))     
+    #setexp_response = interface.set_express_checkout(**kw)
+    #return redirect(interface.generate_express_checkout_redirect_url(setexp_response.token))     
 
 @app.route("/paypal/confirm")
 def paypal_confirm():
