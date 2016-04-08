@@ -304,8 +304,12 @@ nav .trump-menu .menu-center {
 #paypal-button > div:hover {
   border: 1px solid white;
   color: #79D7F6;
-  margin-top: 6px;
-  margin-bottom: 6px;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  #paypal-button > div {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
 }
 
 main {
