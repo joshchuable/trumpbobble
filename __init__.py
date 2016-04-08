@@ -1,20 +1,29 @@
 import sys
 import os
-from flask import Flask, request, render_template, make_response
+from flask import Flask, request, render_template, make_response, url_for, redirect
 from io import StringIO
-from pscripts.send_email import ContactForm
-from flask_mail import Mail, Message
 import datetime
 import stripe
+from paypal import PayPalConfig
+from paypal import PayPalInterface
+from flask_mail import Mail, Message
+from pscripts.send_email import ContactForm
 
+#Paypal configs
+config = PayPalConfig(API_USERNAME = "admin-facilitator_api1.trumpbobble.com",
+                      API_PASSWORD = "VHD5LBSTVY5F2LVY",
+                      API_SIGNATURE = "AFcWxV21C7fd0v3bYYYRCpSSRl31A31AGwDGKoQXB-ZlN1VRvKP2zDyu",
+                      DEBUG_LEVEL=1)
+
+interface = PayPalInterface(config=config)
+
+ #Stripe Configs
 stripe_keys = {
     'secret_key': "sk_test_BnQz5NQauCGFT5lWsQROeTX6",
     'publishable_key': "pk_test_U2NHMtMm8NmjPT9m8ZWyjf8t"
 }
 
 stripe.api_key = stripe_keys['secret_key']
-
-#mo_zip =
 
 app = Flask(__name__)
 app.secret_key = 'the_R4nD0M_Things___4keys--true'
@@ -27,18 +36,17 @@ app.config['MAIL_PASSWORD'] = 'taoist-terrier-sleeve-tingly-debate'
 # Mailer
 mail = Mail(app)
 
-@app.route('/')
+@app.route("/")
 def index():
-	return render_template('contents.html')
+	return render_template("contents.html")
 
 @app.route('/checkout')
 def checkout():
-    return render_template('checkout-form.html', key=stripe_keys['publishable_key'])
+    return render_template("checkout-form.html", key=stripe_keys['publishable_key'])
 
 @app.route('/contact', methods=['POST','GET'])
 def contact():
   form = ContactForm()
-
   if request.method == 'POST':
     if form.validate() == False:
         return 'Please fill out all sections of the form and resubmit.'
@@ -55,7 +63,7 @@ def contact():
   else:
     return render_template('contact.html', form=form)
 
-@app.route('/charge/<amount>', methods=['POST'])
+@app.route("/charge/stripe/<amount>", methods=['POST'])
 def charge(amount):
     # Amount in cents
     token = request.form['stripeToken']
@@ -77,14 +85,79 @@ def charge(amount):
 
             return render_template('thankyou.html',amount=dollar_amount)
         except stripe.CardError:
-            return render_template('error.html', error="Your card was declined. Please try again or call your credit card company.")
+            return render_template('error.html', error="Your card swas declined. Please try again or call your credit card company.")
 
-@app.route("/terms")
+@app.route("/paypal/redirect/<amount>")
+def paypal_redirect(amount):
+    dollar_amount = str(int(amount)/100)
+    kw = {
+        'amt': dollar_amount,
+        'currencycode': 'USD',
+        'returnurl': url_for('paypal_confirm', _external=True),
+        'cancelurl': url_for('paypal_cancel', _external=True),
+        'paymentaction': 'Sale'
+    }
+
+    setexp_response = interface.set_express_checkout(**kw)
+    return redirect(interface.generate_express_checkout_redirect_url(setexp_response.token))
+
+@app.route("/paypal/confirm")
+def paypal_confirm():
+    getexp_response = interface.get_express_checkout_details(token=request.args.get('token', ''))
+
+    if getexp_response['ACK'] == 'Success':
+        return """
+            Everything looks good! <br />
+            <a href="%s">Click here to complete the payment.</a>
+        """ % url_for('paypal_do', token=getexp_response['TOKEN'])
+    else:
+        return """
+            Oh noes! PayPal returned an error code. <br />
+            <pre>
+                %s
+            </pre>
+            Click <a href="%s">here</a> to try again.
+        """ % (getexp_response['ACK'], url_for('index'))
+
+
+@app.route("/paypal/do/<string:token>")
+def paypal_do(token):
+    getexp_response = interface.get_express_checkout_details(token=token)
+    kw = {
+        'amt': getexp_response['AMT'],
+        'paymentaction': 'Sale',
+        'payerid': getexp_response['PAYERID'],
+        'token': token,
+        'currencycode': getexp_response['CURRENCYCODE']
+    }
+    interface.do_express_checkout_payment(**kw)
+
+    return redirect(url_for('paypal_status', token=kw['token']))
+
+@app.route("/paypal/status/<string:token>")
+def paypal_status(token):
+    checkout_response = interface.get_express_checkout_details(token=token)
+
+    if checkout_response['CHECKOUTSTATUS'] == 'PaymentActionCompleted':
+        # Here you would update a database record.
+        return """
+            Awesome! Thank you for your %s %s purchase.
+        """ % (checkout_response['AMT'], checkout_response['CURRENCYCODE'])
+    else:
+        return """
+            Oh no! PayPal doesn't acknowledge the transaction. Here's the status:
+            <pre>
+                %s
+            </pre>
+        """ % checkout_response['CHECKOUTSTATUS']
+
+@app.route("/paypal/cancel")
+def paypal_cancel():
+    return redirect(url_for('index'))
+
+@app.route("/terms/")
 def terms():
     return render_template("terms.html")
 
 if __name__ == "__main__":
 	app.run(debug=True)
-
-
-
