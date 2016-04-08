@@ -44,7 +44,6 @@ function update_subtotal_paypal() {
 	var subtotal_fix = parseInt((parseFloat($('#order-subtotal').text()) * 100).toFixed(0));
 	$("#paypal-button").attr("href", '/paypal/redirect/'+subtotal_fix);
 }
-
 $(document).ready(function() {
 	$('.jumbotron').css('min-height', $(window).height()+'px');
 	$('.jumbotron').css('min-width', $(window).width()+'px');

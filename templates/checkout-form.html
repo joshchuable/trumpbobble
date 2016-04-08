@@ -40,22 +40,11 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12" id="stripe-button-container">
-                        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" id="stripe-button"
-                            data-key="{{ key }}"
-                            data-description="Trump Bobbleheads"
-                            data-amount="0"
-                            data-currency="USD"
-                            data-billing-address="True"
-                            data-shipping-address="True"
-                            data-locale="auto">
-                        </script>
+                    <div class="col-sm-12 col-md-12">
+                        <a href="/paypal/redirect/1999" id="paypal-button"><div>Checkout with PayPal</div></a>
                     </div>
                 </div>
             </form>
-            <a href="/paypal/redirect/1999" id="paypal-button">
-            <img src="https://www.paypalobjects.com/en_US/i/btn/btn_xpressCheckout.gif">
-        </a>
         </div>
     </div>
 </div>
