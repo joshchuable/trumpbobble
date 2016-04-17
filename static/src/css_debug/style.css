@@ -149,7 +149,7 @@ nav .trump-menu {
   border-radius: 4px;
   z-index: 3;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   nav .trump-menu {
     width: 100%;
     border-radius: 0;
@@ -162,7 +162,7 @@ nav .trump-menu .logo {
   font-size: 42px;
   margin-top: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   nav .trump-menu .logo {
     font-size: 30px;
   }
@@ -177,7 +177,7 @@ nav .trump-menu .menu-right {
   flex: 1;
   text-align: right;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   nav .trump-menu .menu-right {
     display: none;
   }
@@ -187,7 +187,7 @@ nav .trump-menu .menu-left {
   -ms-flex: 1;
   flex: 1;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   nav .trump-menu .menu-left {
     display: none;
   }
@@ -210,8 +210,12 @@ nav .trump-menu .menu-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  color: #f7f7f7;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .order-now {
     width: 100%;
   }
@@ -219,11 +223,6 @@ nav .trump-menu .menu-center {
 .order-now:hover {
   background-color: #006bd8;
   cursor: pointer;
-}
-.order-now a {
-  color: #f7f7f7;
-  font-size: 20px;
-  text-decoration: none;
 }
 
 .order-now-bottom {
@@ -239,7 +238,7 @@ nav .trump-menu .menu-center {
   color: #e3e3e3;
   text-decoration: none;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .contact-button {
     font-size: 12px;
   }
@@ -305,7 +304,7 @@ nav .trump-menu .menu-center {
   border: 1px solid white;
   color: #79D7F6;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   #paypal-button > div {
     margin-top: 6px;
     margin-bottom: 6px;
@@ -344,7 +343,7 @@ main:before {
   margin: 0;
   color: #f7f7f7;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   #trump-background {
     background-image: linear-gradient(rgba(27, 27, 27, 0.2), rgba(27, 27, 27, 0.3)), url(../img/trump-background-mobile.jpg);
   }
@@ -360,7 +359,7 @@ main:before {
   opacity: .6;
   z-index: -4;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   #trump-background p {
     font-size: 16px;
   }
@@ -384,7 +383,7 @@ main:before {
   height: 300px;
   box-shadow: 0px 0px 5px rgba(27, 27, 27, 0.8);
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .bobble-hero {
     height: 220px;
     padding: 4px 10px;
@@ -396,7 +395,7 @@ main:before {
   text-align: center;
   color: #f7f7f7;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .product-headline {
     font-size: 24px;
   }
@@ -419,7 +418,7 @@ main:before {
   margin-left: 30px;
   margin-bottom: 12px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .checkout-list {
     font-size: 16px;
     -webkit-column-gap: 10px;
@@ -432,7 +431,7 @@ main:before {
   color: #f7f7f7;
   padding-bottom: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .checkout-list li {
     padding-top: 4px;
   }
@@ -505,7 +504,7 @@ main:before {
   margin-top: 20px;
   box-shadow: 0px 0px 4px rgba(27, 27, 27, 0.8);
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .trump-vid {
     width: 100%;
     height: auto;
@@ -520,7 +519,7 @@ main:before {
   border-radius: 4px;
   width: 260px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .product-hero {
     width: 160px;
   }
@@ -532,7 +531,7 @@ main:before {
   bottom: 1px;
   width: 100%;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 400px) {
   #page-bottom {
     display: none;
   }
@@ -568,7 +567,7 @@ main:before {
   display: block;
   margin: 0 auto;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .learn-more-line {
     width: 80%;
   }
@@ -594,7 +593,7 @@ main:before {
   text-align: center;
   color: rgba(0, 82, 165, 0.8);
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .sell-point-headline {
     font-size: 16px;
   }
@@ -603,7 +602,7 @@ main:before {
 .sell-point-copy {
   font-size: 16px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .sell-point-copy {
     padding-bottom: 20px;
     text-align: center;
@@ -615,7 +614,7 @@ main:before {
   margin-left: 10%;
   margin-right: 10%;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .selling-points {
     margin-left: 2%;
     margin-right: 2%;
@@ -634,7 +633,7 @@ main:before {
   font-size: 20px;
   white-space: nowrap;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .quote-section {
     display: none;
   }
@@ -657,7 +656,7 @@ main:before {
   top: -40px;
   color: #6a7e85;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .quote-section .quote:before {
     font-size: 52px;
     width: 100%;
@@ -683,7 +682,7 @@ main:before {
   margin-top: 12px;
   margin-left: 6px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .quote-attribution .review-headshot {
     width: 60px;
   }
@@ -728,7 +727,7 @@ main:before {
   background-color: rgba(106, 126, 133, 0.7);
   box-shadow: 0 0 3px rgba(27, 27, 27, 0.3);
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .checkout-table {
     margin-top: 6px;
   }
@@ -817,7 +816,7 @@ main:before {
   list-style-type: none;
   padding: 60px 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .footer-list {
     padding: 40px 0px;
   }
@@ -845,7 +844,7 @@ main:before {
   color: #f7f7f7;
   font-size: 10px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .copyright {
     font-size: 8px;
   }
@@ -859,7 +858,7 @@ main:before {
   font-size: 14px;
   border-radius: 4px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   .contact-form {
     font-size: 16px;
   }
@@ -904,7 +903,7 @@ main:before {
 #message:-ms-input-placeholder {
   color: #f7f7f7;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 200px) and (max-width: 768px) {
   #name,
   #email,
   #subject,

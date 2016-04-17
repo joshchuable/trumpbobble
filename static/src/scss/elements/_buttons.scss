@@ -9,6 +9,10 @@
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	color: $white;
+	font-size: 20px;
+	text-decoration: none;
+	text-align: center;
 
 	@include screen-sm {
 		width: 100%;
@@ -17,12 +21,6 @@
 	&:hover {
 		background-color: $blue-light;
 		cursor: pointer;
-	}
-
-	a {
-		color: $white;
-		font-size: 20px;
-		text-decoration: none;
 	}
 }
 

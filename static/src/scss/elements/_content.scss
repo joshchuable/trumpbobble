@@ -210,7 +210,7 @@ main {
 	bottom: 1px;
 	width: 100%;
 
-	@include screen-sm {
+	@include screen-xs {
 		display: none;
 	}
 
